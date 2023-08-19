@@ -7,6 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
 
 <head>
   <title>Luxurious Creation | Feedback</title>
+  <link rel="icon" href="../images/Logo.jpg">
   <!-- custom-theme -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -26,7 +27,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
   <nav>
     <div class="navdiv">
       <div class="navbarL">
-        <img src="assets/images/Logo.jpg" alt="Logo" />
+        <img src="../assets/images/Logo.jpg" alt="Logo" />
         <h1 class="brandName">Luxurios Creation</h1>
       </div>
       <div class="navbarR">
