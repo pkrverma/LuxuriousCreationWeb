@@ -17,8 +17,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
     function hideURLbar(){ window.scrollTo(0,1); } </script>
   <!-- //custom-theme -->
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-  <link rel="stylesheet" href="\assets/style.css">
-  <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <!-- <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Allura&family=Libre+Baskerville&family=Rokkitt:wght@300;400&family=Taviraj&family=Ysabeau+Infant&display=swap" rel="stylesheet">
 </head>
 
 <body class="agileits_w3layouts">
@@ -27,12 +29,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
   <nav>
     <div class="navdiv">
       <div class="navbarL">
-        <img src="../assets/images/Logo.jpg" alt="Logo" />
+        <img src="../images/Logo.jpg" alt="Logo" />
         <h1 class="brandName">Luxurios Creation</h1>
       </div>
       <div class="navbarR">
         <ul class="navList">
-          <li><a href="/assets/index.html">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="#">Category</a></li>
           <li><a href="http://localhost/Home%20Decor/feedback/">Feedback</a></li>
           <li><a href="#">Contact Us</a></li>
@@ -48,27 +50,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
     <div class="w3layouts_main wrap">
       <h3>Please help us to serve you better by taking a couple of minutes. </h3>
       <form action="feedback.php" method="post" class="agile_form">
-        <h2>How satisfied were you with our Service?</h2>
+        <h2>Which category of product you tried from our site?</h2>
         <ul class="agile_info_select" required>
-          <li><input type="radio" name="view" value="excellent" id="excellent" required>
-            <label for="excellent">excellent</label>
+          <li><input type="radio" name="category" value="Showpieces" id="Showpieces" required>
+            <label for="Showpieces">Showpieces</label>
             <div class="check w3"></div>
           </li>
-          <li><input type="radio" name="view" value="good" id="good">
-            <label for="good"> good</label>
+          <li><input type="radio" name="category" value="Tables/Chairs" id="Tables/Chairs">
+            <label for="Tables/Chairs">Tables/Chairs</label>
             <div class="check w3ls"></div>
           </li>
-          <li><input type="radio" name="view" value="neutral" id="neutral">
-            <label for="neutral">neutral</label>
+          <li><input type="radio" name="category" value="Beds" id="Beds">
+            <label for="Beds">Beds</label>
             <div class="check wthree"></div>
           </li>
-          <li><input type="radio" name="view" value="poor" id="poor">
-            <label for="poor">poor</label>
+          <li><input type="radio" name="category" value="Others" id="Others">
+            <label for="Others">Others</label>
             <div class="check w3_agileits"></div>
           </li>
         </ul>
-        <h2>If you have specific feedback, please write to us...</h2>
-        <textarea placeholder="Additional comments" class="w3l_summary" name="comments" required=""></textarea>
+        <h2>How do you feel after using product? Would you recommend to others, please write to us...</h2>
+        <textarea placeholder="Additional Feedback" class="w3l_summary" name="comments" required=""></textarea>
         <input type="text" placeholder="Your Name" required name="name" /><br>
         <input type="email" placeholder="Your Email" required name="email" /><br>
         <input type="text" placeholder="Your Number" required name="num" /><br>
