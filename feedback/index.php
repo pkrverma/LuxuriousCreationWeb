@@ -37,8 +37,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
           <li><a href="../index.html">Home</a></li>
           <li><a href="#">Category</a></li>
           <li><a href="http://localhost/Home%20Decor-xampp/feedback/">Feedback</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <button>Login/Register</button>
+          <li><a href="../contact.html">Contact Us</a></li>
+          <button><a href="../login.html">Login/Register</a></button>
         </ul>
       </div>
     </div>

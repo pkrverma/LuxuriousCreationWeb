@@ -1,18 +1,23 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
     padding: 0;
     margin: 0;
-    font-family: 'Taviraj', serif;
+    font-family: "Taviraj", serif;
     /* font-family: 'Allura', cursive; */
     /* font-family: 'Libre Baskerville', serif; */
     /* font-family: 'Rokkitt', serif; */
     /* font-family: 'Ysabeau Infant', sans-serif;*/
 }
 
-.navdiv{
+
+/* navigation */
+
+.navdiv {
     width: 100%;
     height: 4rem;
-    background-color: #EEEDE7;
-    border: 1px solid #EEEDE7;
+    background-color: #eeede7;
+    border: 1px solid #eeede7;
     box-shadow: 0px 0.5px 3px rgb(136, 136, 136);
     margin: 0rem 0.1rem;
     display: flex;
@@ -24,97 +29,106 @@
     z-index: 2;
 }
 
-.navbarL{
+.navbarL {
     display: flex;
     flex-direction: row;
 }
 
-.navbarL img{
+.navbarL img {
     height: 3.5rem;
-    padding: 0.25rem ;
+    padding: 0.25rem;
 }
 
-.brandName{
+.brandName {
     margin: auto 0;
     margin-left: 0.5rem;
     font-size: 2.25rem;
-    font-family: 'Allura', cursive;
-
+    font-family: "Allura", cursive;
 }
 
-.navList{
+.navList {
     display: flex;
     flex-direction: row;
     list-style: none;
     align-items: center;
     text-align: center;
-    margin: 0.5rem 0 ;
+    margin: 0.5rem 0;
 }
 
-.navList li{
+.navList li {
     margin-left: 1.5rem;
 }
 
-.navList li a{
+.navList li a {
     font-size: 1rem;
     text-decoration: none;
     color: black;
 }
-.navList button{
+
+.navList button {
     margin: auto 01rem;
     padding: 0.25rem 1.5rem;
-    border: 1px solid #B9B7BD;
+    border: 1px solid #b9b7bd;
     border-radius: 20px;
-    background-color: #EEEDE7;
+    background-color: #eeede7;
 }
 
-.introModel{
+
+
+/* Main content */
+
+.introModel {
     padding-top: 6rem;
 }
 
-.row1, .row2{
+.row1,
+.row2 {
     display: flex;
     flex-direction: row;
     padding: 0 4rem;
 }
 
-.introModel img{
+.introModel img {
     height: 12rem;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.05);
 }
 
-.card{
+.card {
     /* border: 2px solid #868b8e54; */
     border-radius: 0.5rem;
-    background-color:#b9b7bd24 ;
+    background-color: #b9b7bd24;
     margin: 1rem auto;
     /* height: 20rem; */
     padding: 0.5rem;
     transition: 0.2s ease-in-out;
 }
 
-.carddetail{
+.carddetail {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.carddetail p{
-    font-family: 'Ysabeau Infant', sans-serif;
+.carddetail p {
+    font-family: "Ysabeau Infant", sans-serif;
 }
 
-.brandintro{
+.brandintro {
     text-align: center;
 }
 
-.viewAr a{
+
+
+/* AR VIEW */
+
+.viewAr a {
     text-decoration: none;
-    color:#148bd5 ;
+    color: #148bd5;
 }
 
 .viewAr {
@@ -123,7 +137,7 @@
     align-items: center;
     position: relative;
     padding: 0.6em 2em;
-    border: #B9B7BD solid 0.15em;
+    border: #b9b7bd solid 0.15em;
     border-radius: 0.25em;
     font-size: 0.8em;
     font-weight: 600;
@@ -136,21 +150,22 @@
 .viewAr p {
     z-index: 1;
 }
-  
+
 .viewAr:hover {
     color: #148bd5;
 }
-  
+
 .viewAr:active {
-    border-color: #E7D2CC;
+    border-color: #e7d2cc;
 }
 
-.viewAr::after, .viewAr::before {
+.viewAr::after,
+.viewAr::before {
     content: "";
     position: absolute;
     width: 9em;
     aspect-ratio: 1;
-    background: #B9B7BD;
+    background: #b9b7bd;
     opacity: 50%;
     border-radius: 50%;
     transition: transform 500ms, background 300ms;
@@ -176,5 +191,197 @@
 
 .viewAr:active:before,
 .viewAr:active:after {
-    background: #E7D2CC;
-}  
+    background: #e7d2cc;
+}
+
+
+
+/* Registration */
+
+#login {
+    margin: 0;
+    margin-top: 0vw;
+    margin-bottom: 5vw;
+    padding: 0px;
+    font-family: "poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 110vh;
+    width: 100%;
+    /* background: url('https://wallpapercave.com/wp/wp6982478.jpg')no-repeat;  */
+    /* background: url("https://wallpapercave.com/wp/wp4194085.png") no-repeat; */
+    background: url("../images/coverBG.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(219, 219, 219, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* transform: scale(0); */
+    transition: transform 0.5s ease, height 0.2s ease;
+}
+
+.wrapper.active {
+    height: 520px;
+}
+
+.wrapper .form-box {
+    width: 80%;
+    padding: 30px;
+}
+
+.wrapper .form-box.login {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translatex(400px);
+}
+
+.wrapper.active .form-box.register {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: rgb(188, 184, 184);
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding-right: 35px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 5px;
+    font-size: 1.2em;
+    color: rgb(188, 184, 184);
+    line-height: 53px;
+}
+
+.remember-forget {
+    font-size: 0.9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forget label input {
+    accent-color: #162938;
+    margin-right: 5px;
+}
+
+.remember-forget a {
+    color: #162938;
+    text-decoration: none;
+}
+
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+
+#login .button {
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #ffff;
+    font-weight: 500;
+}
+
+.login-register {
+    font-size: 0.9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
