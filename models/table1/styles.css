@@ -1,3 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Taviraj', serif;
+  /* font-family: 'Allura', cursive; */
+  /* font-family: 'Libre Baskerville', serif; */
+  /* font-family: 'Rokkitt', serif; */
+  /* font-family: 'Ysabeau Infant', sans-serif;*/
+}
+
 :not(:defined) > * {
   display: none;
 }
@@ -13,15 +23,6 @@ body {
   height: 100%;
 }
 
-*{
-  padding: 0;
-  margin: 0;
-  font-family: 'Taviraj', serif;
-  /* font-family: 'Allura', cursive; */
-  /* font-family: 'Libre Baskerville', serif; */
-  /* font-family: 'Rokkitt', serif; */
-  /* font-family: 'Ysabeau Infant', sans-serif;*/
-}
 .navdiv{
   width: 100%;
   height: 4rem;
@@ -99,6 +100,8 @@ model-viewer {
   height: 80%;
   background-color: #ffffff;
 }
+
+/* editing end */
 
 
 .progress-bar {
