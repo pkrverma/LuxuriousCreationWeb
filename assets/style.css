@@ -87,7 +87,7 @@
     padding-top: 6rem;
 }
 
-.trend{
+.secHead{
     margin: 0 4rem 0;
     width: 14.5%;
     padding: 0 0.5rem ;
@@ -96,18 +96,18 @@
     align-items: center;
 }
 
-.trend p{
+.secHead p{
     font-size: 1.2rem;
     font-weight:900;
 }
 
-.trend:hover{
+.secHead:hover{
     transition: ease-in-out .2s;
     background-color: #b9b7bd4d;
     border-radius: 0.5rem;
 }
 
-.trend i{
+.secHead i{
     margin: 0 0 0 1.2rem;
 }
 
@@ -119,12 +119,12 @@
 }
 
 .introModel img {
-    height: 12rem;
+    height: 11rem;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 }
 
-.card:hover {
+.card:hover{
     transform: scale(1.05);
 }
 
@@ -133,7 +133,7 @@
     border-radius: 0.5rem;
     background-color: #b9b7bd24;
     margin: 0.5rem auto 1.5rem;
-    padding: 0.5rem;
+    padding: 0.75rem;
     transition: 0.2s ease-in-out;
 }
 
@@ -143,9 +143,6 @@
     justify-content: space-between;
 }
 
-.carddetail p {
-    font-family: "Ysabeau Infant", sans-serif;
-}
 
 .brandintro {
     width: 90%;
@@ -178,8 +175,51 @@
     margin: 2rem auto;
 }
 
-.Sec{
-    width: 8%;
+.title{
+     font-family: 'Allura', cursive;
+    /* font-family: 'Libre Baskerville', serif; */
+    /* font-family: 'Rokkitt', serif; */
+    /* font-family: 'Ysabeau Infant', sans-serif; */
+    /* font-family: 'Pacifico', cursive; */
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.disp{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.sectionRow{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 4rem;
+
+}
+
+.secCardDetail{
+    background-color: #b9b7bd4d;
+    margin: 0.5rem auto 1rem;
+    height: 13rem;
+    padding: 0.7rem;
+    border-radius: 1rem;
+}
+
+.secCardDetail button{
+    width: 5rem;
+    padding: 0.25rem 0.25rem;
+}
+
+.secCardDetail button p{
+margin: 0 auto;
+}
+
+.secCardDetail img{
+    height: 8.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 }
 
 
@@ -198,6 +238,7 @@
     position: relative;
     padding: 0.6em 2em;
     border: #b9b7bd solid 0.15em;
+    background-color: #ffffff;
     border-radius: 0.25em;
     font-size: 0.8em;
     font-weight: 600;
@@ -212,7 +253,8 @@
 }
 
 .viewAr:hover {
-    color: #148bd5;
+    color: rgb(0, 0, 0);
+    
 }
 
 .viewAr:active {
@@ -250,8 +292,8 @@
 }
 
 .viewAr:active:before,
-.viewAr:active:after {
-    background: #e7d2cc;
+.viewAr:active:after{
+    background: #ffffff;
 }
 
 
