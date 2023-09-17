@@ -8,6 +8,7 @@
     /* font-family: 'Libre Baskerville', serif; */
     /* font-family: 'Rokkitt', serif; */
     /* font-family: 'Ysabeau Infant', sans-serif;*/
+    /* font-family: 'Pacifico', cursive; */
 }
 
 
@@ -73,12 +74,41 @@
     background-color: #eeede7;
 }
 
+.navList button a{
+    color: black;
+    text-decoration: none;
+}
+
 
 
 /* Main content */
 
 .introModel {
     padding-top: 6rem;
+}
+
+.trend{
+    margin: 0 4rem 0;
+    width: 14.5%;
+    padding: 0 0.5rem ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.trend p{
+    font-size: 1.2rem;
+    font-weight:900;
+}
+
+.trend:hover{
+    transition: ease-in-out .2s;
+    background-color: #b9b7bd4d;
+    border-radius: 0.5rem;
+}
+
+.trend i{
+    margin: 0 0 0 1.2rem;
 }
 
 .row1,
@@ -102,8 +132,7 @@
     /* border: 2px solid #868b8e54; */
     border-radius: 0.5rem;
     background-color: #b9b7bd24;
-    margin: 1rem auto;
-    /* height: 20rem; */
+    margin: 0.5rem auto 1rem;
     padding: 0.5rem;
     transition: 0.2s ease-in-out;
 }
@@ -119,7 +148,38 @@
 }
 
 .brandintro {
+    width: 90%;
+    margin: 2rem auto;
+    border: #b9b7bd 2px solid;
+    align-items: center;
+    border-radius: 2rem;
     text-align: center;
+}
+
+.head{
+    margin: 1rem auto 0.25rem;
+    width: 60%;
+}
+
+.subhead{
+    margin: 0 auto;
+    font-family: 'Pacifico', cursive;
+    font-size: 0.9rem;
+    font-weight: 200;
+    width: 60%;
+    font-size: small;
+    color: #8e8b8e;
+    border-bottom: #b9b7bd 2px solid;
+}
+
+.brand_desc{
+    text-align: justify;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.Sec{
+    width: 8%;
 }
 
 
