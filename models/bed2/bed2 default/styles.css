@@ -251,17 +251,17 @@ model-viewer>#ar-prompt>img {
 /* violet model */
 
 .violet{
-  background-color: #9C99CE;
+  background-color: #4445ae;
 }
 
 .aviolet:hover{
-  color: #9C99CE;
+  color: #4445ae;
 }
 
 .violet:hover{
   background: #ffffff;
-  box-shadow: 0 0 2rem #9C99CE;
-  border: #9C99CE 3px solid;
+  box-shadow: 0 0 2rem #4445ae;
+  border: #4445ae 3px solid;
 }
 
 /* Green Model */
