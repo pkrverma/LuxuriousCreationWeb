@@ -2,14 +2,15 @@
 ob_start(); 
 require 'config.php';
 
-$view = $_POST['category'];
+$rating = $_POST['rating'];
+$category = $_POST['category'];
 $name = $_POST['name'];
 $comments = $_POST['comments'];
 $email = $_POST['email'];
 $num = $_POST['num'];
 
 
-$query = mysqli_query($con, "INSERT INTO `feedback_lc`(`id`, `name`, `email`, `phone`, `feedback`, `suggestions`) VALUES ('','$name','$email','$num','$category','$comments')");
+$query = mysqli_query($con, "INSERT INTO `feedback_lc`(`name`, `email`, `phone`, `category`, `rating`, `suggestions`) VALUES ('$name','$email','$num','$category', '$rating', '$comments')");
 echo '<script>alert("Thank You..! Your Feedback is Valuable to Us"); location.replace(document.referrer);</script>';
 
 
