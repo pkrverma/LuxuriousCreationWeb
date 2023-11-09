@@ -212,7 +212,7 @@ model-viewer>#ar-prompt>img {
   animation: circle 4s linear infinite;
 }
 
-.optColor a{
+.optColor {
   color:#ffffff
 }
 
@@ -226,9 +226,6 @@ model-viewer>#ar-prompt>img {
   background: #ffffff;
   box-shadow: 0 0 2rem #AD6A49;
   border:#AD6A49 3px solid;
-}
-
-.adefault:hover{
   color: #AD6A49;
 }
 
@@ -238,11 +235,8 @@ model-viewer>#ar-prompt>img {
   background-color: black;
 }
 
-.ablack:hover{
-  color: rgb(0, 0, 0);
-}
-
 .black:hover{
+  color: rgb(0, 0, 0);
   background: #ffffff;
   box-shadow: 0 0 2rem #000000;
   border: #000000 3px solid;
@@ -254,11 +248,8 @@ model-viewer>#ar-prompt>img {
   background-color: #6F69D4;
 }
 
-.aviolet:hover{
-  color: #6F69D4;
-}
-
 .violet:hover{
+  color: #6F69D4;
   background: #ffffff;
   box-shadow: 0 0 2rem #6F69D4;
   border: #6F69D4 3px solid;
@@ -270,11 +261,8 @@ model-viewer>#ar-prompt>img {
   background-color: #406923;
 }
 
-.agreen:hover{
-  color: #406923;
-}
-
 .green:hover{
+  color: #406923;
   background: #ffffff;
   box-shadow: 0 0 2rem #406923;
   border: #406923 3px solid;
