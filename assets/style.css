@@ -286,6 +286,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: nowrap;
+    word-wrap: wrap;
 }
 
 button.buy_now {
