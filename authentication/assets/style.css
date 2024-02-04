@@ -8,7 +8,6 @@
     font-family: "poppins", sans-serif;
     display: flex;
     justify-content: center;
-    display: flex;
     align-items: center;
     min-height: 110vh;
     width: 100%;
@@ -22,7 +21,7 @@
 .wrapper {
     position: relative;
     width: 500px;
-    height: 450px;
+    margin-top: 2rem;
     background: transparent;
     border: 2px solid rgba(219, 219, 219, 0.5);
     border-radius: 20px;
@@ -32,7 +31,6 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* transform: scale(0); */
     transition: transform 0.5s ease, height 0.2s ease;
 }
 
@@ -235,4 +233,26 @@ p.forget-inst {
     color: rgb(210, 4, 4);
     text-shadow: rgba(0, 0, 0, 0.358) 2px 3px 4px;
     font-weight: bolder;
+}
+
+@media(max-width:760px){
+    .wrapper .form-box {
+        padding: 20px;
+    }
+
+    .wrapper.active {
+        height: 600px;
+    }
+
+    .wrapper.activate{
+        height: 450px;
+    }
+
+    .input-box{
+        margin: 20px 0px;
+    }
+
+    .wrapper{
+        margin-top: 4rem;
+    }
 }

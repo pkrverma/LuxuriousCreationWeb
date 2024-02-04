@@ -419,7 +419,7 @@ h1.agile_head {
 
 .agile_form ul li .rate:hover,
 .agile_form ul li .fa-star:hover {
-	color: #fffb00;
+	color: #fff159;
 }
 
 .checkbox {
@@ -464,7 +464,7 @@ ul li .Rcheck {
 }
 
 .agile_form ul li:hover .Rcheck {
-	border: 3px solid #ffea00;
+	border: 3px solid #fff159;
 }
 
 .agile_form ul li .check::before {
@@ -501,7 +501,7 @@ ul li .Rcheck {
 }
 
 .agile_form input[type=radio]:checked~.Rcheck {
-	border: 3px solid #ffea00;
+	border: 3px solid #fff159;
 	box-shadow: #000000 2px 2px 10px;
 }
 
@@ -510,7 +510,7 @@ ul li .Rcheck {
 }
 
 .agile_form input[type=radio]:checked~.Rcheck::before {
-	background: #ffea00;
+	background: #fff159;
 }
 
 .agile_form input[type=radio]:checked~label {
@@ -518,7 +518,7 @@ ul li .Rcheck {
 }
 
 .agile_form input[type=radio]:checked~.rate {
-	color: #ffea00;
+	color: #fff159;
 }
 
 .textarea.w3l_summary {
@@ -781,12 +781,33 @@ ul li .Rcheck {
 
 @media screen and (max-width: 768px) {
 	.wrap {
-		width: 57%;
+		width: 65%;
 	}
 
 	.agile_form input[type=text],
 	.agile_form input[type="email"] {
 		width: 94%;
+	}
+
+	.agile_form ul li label {
+		margin: 0px 0 0px 0.8em;
+		padding: 0.7em 0em 0.5em 2rem;
+	}
+
+	.navbarL h1 {
+		font-size: 1.7rem;
+	}
+
+	.navList li a {
+		font-size: 0.9rem;
+	}
+
+	.navList button {
+		font-size: 0.9rem;
+	}
+
+	.navList li {
+		margin-left: 1rem;
 	}
 
 }

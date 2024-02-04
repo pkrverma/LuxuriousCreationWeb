@@ -34,8 +34,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script> -->
-    
-    
+
     <title>Luxurious Creation | Login</title>
   </head>
 
@@ -44,53 +43,26 @@
     <nav>
       <div class="navdiv">
         <div class="navbarL">
-          <img src="../images/Logo.jpg" alt="L.C. Logo" />
-          <h1 class="brandName">Luxurios Creation</h1>
+          <a href="../index.html">
+            <img src="../images/Logo.jpg" alt="L.C. Logo" />
+            <h1 class="brandName">Luxurios Creation</h1>
+          </a>
         </div>
         <div class="navbarR">
           <ul class="navList">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../category.html">Category</a></li>
             <li>
-              <a href="http://localhost/Home%20Decor-xampp/feedback/index.php"
-                >Feedback</a
-              >
+              <a href="../feedback/feedback.html">Feedback</a>
             </li>
             <li>
-              <a href="http://localhost/Home%20Decor-xampp/contact/index.php"
-                >Contact Us</a
-              >
+              <a href="../contact/index.html">Contact Us</a>
             </li>
-            <button><a href="http://localhost/Home%20Decor-xampp/authentication/index.php">Login/Register</a></button>
+            <button class="active"><a href="index.html">Login/Register</a></button>
           </ul>
         </div>
       </div>
     </nav>
-
-    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </div>
-        </div>
-      </div>
-    </nav> -->
 
     <!-- navigation -->
 
@@ -100,10 +72,6 @@
       <!-- Login-Registration -->
 
       <div class="wrapper">
-        <!-- <span class="icon-close">
-                    <ion-icon name="close"></ion-icon>
-                </span> -->
-
         <div class="form-box login">
           <h2>Login</h2>
           <form action="login.php" method="post">
@@ -243,7 +211,7 @@
     <footer>
       <div class="alert alert-danger" role="alert">
         The Website is under development! Stay connected.
-      </div>      
+      </div>
     </footer>
 
     <!-- Footer -->
@@ -303,7 +271,6 @@
 
     </footer> -->
 
-    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

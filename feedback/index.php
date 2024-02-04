@@ -32,6 +32,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
     /> -->
     <!-- //custom-theme -->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link
+      href="../assets/style.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
     <!-- <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,28 +59,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
     <nav>
       <div class="navdiv">
         <div class="navbarL">
-          <img src="../images/Logo.jpg" alt="Logo" />
-          <h1 class="brandName">Luxurios Creation</h1>
+          <a href="../index.html">
+            <img src="../images/Logo.jpg" alt="Logo" />
+            <h1 class="brandName">Luxurios Creation</h1>
+          </a>
         </div>
         <div class="navbarR">
           <ul class="navList">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../category.html">Category</a></li>
-            <li>
-              <a href="http://localhost/Home%20Decor-xampp/feedback/index.php"
-                >Feedback</a
-              >
+            <li class="active">
+              <a href="index.html">Feedback</a>
             </li>
             <li>
-              <a href="http://localhost/Home%20Decor-xampp/contact/index.php"
-                >Contact Us</a
-              >
+              <a href="../contact/index.html">Contact Us</a>
             </li>
             <button>
-              <a
-                href="http://localhost/Home%20Decor-xampp/authentication/index.php"
-                >Login/Register</a
-              >
+              <a href="../authentication/index.html">Login/Register</a>
             </button>
           </ul>
         </div>
@@ -97,7 +98,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
                 value="Showpieces"
                 id="Showpieces"
               />
-              <label for="Showpieces">Sofa Set</label>
+              <label for="Showpieces">Showpieces</label>
               <div class="check w3"></div>
             </li>
             <li>

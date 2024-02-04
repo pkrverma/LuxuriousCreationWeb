@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/style.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <link rel="icon" href="../images/Logo.jpg" />
     <link
@@ -33,24 +33,24 @@
     <nav>
       <div class="navdiv">
         <div class="navbarL">
-          <img src="../images/Logo.jpg" alt="Logo" />
-          <h1 class="brandName">Luxurios Creation</h1>
+          <a href="../index.html">
+            <img src="../images/Logo.jpg" alt="Logo" />
+            <h1 class="brandName">Luxurios Creation</h1>
+          </a>
         </div>
         <div class="navbarR">
           <ul class="navList">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../category.html">Category</a></li>
             <li>
-              <a href="http://localhost/Home%20Decor-xampp/feedback/index.php"
-                >Feedback</a
-              >
+              <a href="../feedback/index.html">Feedback</a>
             </li>
-            <li>
-              <a href="http://localhost/Home%20Decor-xampp/contact/index.php"
-                >Contact Us</a
-              >
+            <li class="active">
+              <a href="index.html">Contact Us</a>
             </li>
-            <button><a href="http://localhost/Home%20Decor-xampp/authentication/index.php">Login/Register</a></button>
+            <button>
+              <a href="../authentication/index.html">Login/Register</a>
+            </button>
           </ul>
         </div>
       </div>
@@ -67,15 +67,15 @@
       <section id="contact">
         <div class="getin">
           <h2>Get in touch</h2>
-          <p>Want personalised furniture set? Feel free to write us.</p>
-          <!-- <p>Looking for help? Fill the form and start a new adventure.</p> -->
+          <p>Looking for help? Fill the form and start a new adventure.</p>
 
           <div class="getin-details">
             <h3>Headquaters</h3>
             <div>
               <ion-icon name="home-outline"></ion-icon>
-              <p><strong>University of Engineering & Management, jaipur</strong>
-                <br>
+              <p>
+                <strong>University of Engineering & Management, jaipur</strong>
+                <br />
                 Department of Computer Science & Engineering
               </p>
             </div>
@@ -145,13 +145,19 @@
       </section>
 
       <section id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.7905862665657!2d75.69836761326215!3d27.212892442616397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396cffc30dacc2db%3A0xb78e5c340c935a95!2sUniversity%20of%20Engineering%20%26%20Management%20(UEM)%2C%20Jaipur!5e1!3m2!1sen!2sin!4v1696071244188!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.7905862665657!2d75.69836761326215!3d27.212892442616397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396cffc30dacc2db%3A0xb78e5c340c935a95!2sUniversity%20of%20Engineering%20%26%20Management%20(UEM)%2C%20Jaipur!5e1!3m2!1sen!2sin!4v1696071244188!5m2!1sen!2sin"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </div>
     <footer>
       <div class="alert alert-danger" role="alert">
         The Website is under development! Stay connected.
-      </div>      
+      </div>
     </footer>
 
     <script
