@@ -30,12 +30,15 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <title>Login | Luxurious Creation</title>
+    <!-- <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script> -->
+
+    <title>Luxurious Creation | Login</title>
   </head>
 
   <body>
-
-    
     <!-- navigation -->
     <nav>
       <div class="navdiv">
@@ -273,7 +276,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    </script>
+    <script src="assets/script.js"></script>
     <script src="../assets/script.js"></script>
   </body>
 </html>
