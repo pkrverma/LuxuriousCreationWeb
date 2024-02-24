@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
   </head>
-  <body>
+  <body onload="hideLoader()">
+    <!-- loader -->
+    <div class="page-loader">
+      <div class="spinner"></div>
+      <div class="txt">Loading...</div>
+    </div>
+
+    <!-- loader end -->
     <!-- <model-viewer> HTML element -->
     <model-viewer src="chair.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
       <div class="progress-bar hide" slot="progress-bar">

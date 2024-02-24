@@ -30,22 +30,24 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <!-- <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script> -->
-
-    <title>Luxurious Creation | Login</title>
+    <title>Login | Luxurious Creation</title>
   </head>
 
-  <body>
+  <body onload="hideLoader()">
+    <!-- loader -->
+    <div class="page-loader">
+      <div class="spinner"></div>
+      <div class="txt">Loading...</div>
+    </div>
+
+    <!-- loader end -->
     <!-- navigation -->
     <nav>
       <div class="navdiv">
         <div class="navbarL">
           <a href="../index.html">
             <img src="../images/Logo.jpg" alt="L.C. Logo" />
-            <h1 class="brandName">Luxurios Creation</h1>
+            <h1 class="brandName">Luxurious Creation</h1>
           </a>
         </div>
         <div class="navbarR">
@@ -276,6 +278,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../assets/script.js"></script>
   </body>
 </html>
