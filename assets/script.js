@@ -22,7 +22,7 @@ function showHideNav() {
       <div class="navbarRnav-tab sidebar" id="mySidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
         <ul class="navList">
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="category.html">Category</a></li>
           <li>
             <a href="feedback/index.html">Feedback</a>
@@ -41,27 +41,27 @@ function showHideNav() {
         </button>
       </div>`;
   } else {
-    menuBtn.innerHTML = `<div class="navbarL">
-        <a href="index.html" aria-current="page">
-          <img src="images/Logo.jpg" alt="Logo" />
-          <h1 class="brandName">Luxurious Creation</h1>
-        </a>
-      </div>
-      <div class="navbarRnav-tab sidebar" id="mySidebar">
-        <ul class="navList">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="category.html">Category</a></li>
-          <li>
-            <a href="feedback/index.html">Feedback</a>
-          </li>
-          <li>
-            <a href="contact/index.html">Contact Us</a>
-          </li>
-          <button>
-            <a href="authentication/index.html">Login/Register</a>
-          </button>
-        </ul>
-      </div>`;
+    // menuBtn.innerHTML = `<div class="navbarL">
+    //     <a href="index.html" aria-current="page">
+    //       <img src="images/Logo.jpg" alt="Logo" />
+    //       <h1 class="brandName">Luxurious Creation</h1>
+    //     </a>
+    //   </div>
+    //   <div class="navbarRnav-tab sidebar" id="mySidebar">
+    //     <ul class="navList">
+    //       <li><a href="index.html">Home</a></li>
+    //       <li><a href="category.html">Category</a></li>
+    //       <li>
+    //         <a href="feedback/index.html">Feedback</a>
+    //       </li>
+    //       <li>
+    //         <a href="contact/index.html">Contact Us</a>
+    //       </li>
+    //       <button>
+    //         <a href="authentication/index.html">Login/Register</a>
+    //       </button>
+    //     </ul>
+    //   </div>`;
   }
 }
 
