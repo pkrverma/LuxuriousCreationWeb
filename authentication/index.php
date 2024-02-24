@@ -33,14 +33,9 @@
     <title>Login | Luxurious Creation</title>
   </head>
 
-  <body onload="hideLoader()">
-    <!-- loader -->
-    <div class="page-loader">
-      <div class="spinner"></div>
-      <div class="txt">Loading...</div>
-    </div>
+  <body>
 
-    <!-- loader end -->
+    
     <!-- navigation -->
     <nav>
       <div class="navdiv">
@@ -278,7 +273,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </script>
     <script src="../assets/script.js"></script>
   </body>
 </html>

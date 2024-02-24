@@ -55,13 +55,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
   </head>
 
   <body class="agileits_w3layouts" onload="hideLoader()">
-    <!-- loader -->
-    <div class="page-loader">
-      <div class="spinner"></div>
-      <div class="txt">Loading...</div>
-    </div>
 
-    <!-- loader end -->
+    
     <!--Navigation-->
     <nav>
       <div class="navdiv">
@@ -209,7 +204,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
       </div>
     </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </script>
     <script src="../assets/script.js"></script>
   </body>
 </html>

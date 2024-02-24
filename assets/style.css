@@ -161,6 +161,129 @@ div .navList li a:hover {
     border-bottom: 3px solid #29ae84cb;
 }
 
+/* sidebar toggle */
+@media (max-width:20px) {
+
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 65px;
+        transition: 0.5s;
+        background-color: #eeede77e;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+
+    nav div.navbarRnav-tab ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar a {
+        padding: 8px 8px 8px 8px;
+        text-decoration: none;
+        padding-left: 1.5rem;
+        color: #000000;
+        text-align: left;
+        display: block;
+        transition: 0.3s;
+    }
+
+
+    .sidebar a:hover {
+        color: #29ae84cb;
+    }
+
+
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+
+    .openbtn {
+        font-size: 25px;
+        cursor: pointer;
+        background-color: #086E7D;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 50%;
+        border: none;
+        text-align: center;
+        transition: background-color .5s;
+    }
+
+
+    .openbtn:hover {
+        background-color: #218898;
+    }
+
+    #main {
+        transition: margin-left .5s;
+        padding: 20px;
+    }
+
+    .nav-tab ul li a {
+        color: #FFF89A;
+        margin: 0.75rem 0;
+    }
+
+    .nav-tab ul li a:hover {
+        color: whitesmoke;
+    }
+
+
+    .nav-tab li {
+        padding: 0rem 0.5rem;
+    }
+
+    nav .title {
+        padding-left: 1rem;
+    }
+}
+
+/* sidebar toggle end */
+
+@media(max-width:880px) {
+    .navList button {
+        margin: auto 0.5rem;
+        padding: 0.25rem 1rem;
+    }
+    .navList li{
+        margin-left:1rem;
+    }
+
+    .navbarL h1 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:784px) {
+    .navbarL h1 {
+        font-size: 1.7rem;
+    }
+
+    .navList li a {
+        font-size: 0.9rem;
+    }
+
+    .navList button {
+        font-size: 0.9rem;
+    }
+
+    .navList li {
+        margin-left: 1rem;
+    }
+}
+
 @media(max-width:768px) {
     .navbarL h1 {
         font-size: 1.7rem;
