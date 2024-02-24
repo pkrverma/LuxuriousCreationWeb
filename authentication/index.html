@@ -53,7 +53,7 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="../category.html">Category</a></li>
             <li>
-              <a href="../feedback/feedback.html">Feedback</a>
+              <a href="../feedback/index.html">Feedback</a>
             </li>
             <li>
               <a href="../contact/index.html">Contact Us</a>

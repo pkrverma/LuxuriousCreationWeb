@@ -26,7 +26,15 @@
     <title>Luxurious Creation | Home</title>
   </head>
 
-  <body>
+  <body onload="hideLoader()">
+    <!-- loader -->
+    <div class="page-loader">
+      <div class="spinner"></div>
+      <div class="txt">Loading...</div>
+    </div>
+
+    <!-- loader end -->
+
     <!-- navigation -->
     <nav>
       <div class="navdiv">
@@ -41,20 +49,13 @@
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="category.html">Category</a></li>
             <li>
-              <a href="feedback/index.html"
-                >Feedback</a
-              >
+              <a href="feedback/index.html">Feedback</a>
             </li>
             <li>
-              <a href="contact/index.html"
-                >Contact Us</a
-              >
+              <a href="contact/index.html">Contact Us</a>
             </li>
             <button>
-              <a
-                href="authentication/index.html"
-                >Login/Register</a
-              >
+              <a href="authentication/index.html">Login/Register</a>
             </button>
           </ul>
         </div>
@@ -147,5 +148,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
