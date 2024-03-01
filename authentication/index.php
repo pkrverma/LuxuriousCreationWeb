@@ -35,7 +35,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script> -->
 
-    <title>Luxurious Creation | Login</title>
+    <title>Login | Luxurious Creation</title>
   </head>
 
   <body>
@@ -44,7 +44,7 @@
       <div class="navdiv">
         <div class="navbarL">
           <a href="../index.html">
-            <img src="../images/Logo.jpg" alt="L.C. Logo" />
+            <img src="../images/Logo.jpg" alt="Logo" />
             <h1 class="brandName">Luxurious Creation</h1>
           </a>
         </div>
@@ -58,7 +58,9 @@
             <li>
               <a href="../contact/index.html">Contact Us</a>
             </li>
-            <button class="active"><a href="index.html">Login/Register</a></button>
+            <button class="active">
+              <a href="index.html">Login/Register</a>
+            </button>
           </ul>
         </div>
       </div>

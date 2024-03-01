@@ -5,7 +5,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Luxurious Creation | Feedback</title>
+    <title>Feedback | Luxurious Creation</title>
 
     <link rel="icon" href="../images/Logo.jpg" />
     <!-- custom-theme -->
@@ -54,9 +54,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
     />
   </head>
 
-  <body class="agileits_w3layouts" onload="hideLoader()">
-
-    
+  <body>
     <!--Navigation-->
     <nav>
       <div class="navdiv">
@@ -203,8 +201,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
         <p></p>
       </div>
     </section>
-
-    </script>
     <script src="../assets/script.js"></script>
   </body>
 </html>
