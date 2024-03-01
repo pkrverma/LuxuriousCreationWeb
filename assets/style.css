@@ -29,12 +29,14 @@
     z-index: 20;
 }
 
-.navbarL a {
-    text-decoration: none;
-    color: black;
+.navbarR {
+    display: flex;
+    flex-direction: row;
 }
 
 .navbarL a {
+    text-decoration: none;
+    color: black;
     display: flex;
     flex-direction: row;
 }
@@ -98,13 +100,89 @@ button.active a {
 }
 
 div .navList li a {
-    transition: color 100ms ease-in-out, border-bottom 100ms;
+    transition: color 100ms linear, border-bottom 100ms linear;
 }
 
 div .navList li a:hover {
     width: 100%;
     color: #29ae84cb;
     border-bottom: 3px solid #29ae84cb;
+}
+
+label #cancel,
+label #btn,
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    color: #000000;
+    font-size: 1.5rem;
+    float: right;
+    align-items: center;
+    margin-right: 1rem;
+    cursor: pointer;
+    padding-right: 0.75rem;
+}
+
+@media (max-width:720px) {
+
+    label #btn {
+        display: block;
+    }
+
+    #check:checked{
+        transition: all .1s ease-in;
+    }
+
+    ul {
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        background-color: #eeede760;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        top: 3.5rem;
+        left: -100%;
+        transition: all .5s;
+    }
+
+    nav ul.navList {
+        display: block;
+        padding-top: 1rem;
+    }
+
+    nav ul.navList li {
+        margin: 0;
+        padding: 1.5rem 0.5rem;
+    }
+
+    nav ul.navList li a {
+        font-size: 1.1rem;
+        color: white;
+    }
+
+    nav ul.navList li.active a{
+        text-shadow: #979797 2px 2px 4px;
+        color: #00a06d;
+    }
+
+    nav ul.navList button {
+        font-size: 1.1rem;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    #check:checked~label #btn {
+        display: none;
+    }
+
+    #check:checked~label #cancel {
+        display: block;
+    }
 }
 
 @media(max-width:880px) {

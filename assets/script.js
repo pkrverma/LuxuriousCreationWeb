@@ -11,3 +11,12 @@ registerLink.addEventListener('click', () => {
 loginLink.addEventListener('click', () => {
   wrapper.classList.remove('active');
 })
+
+const menuBtn = document.querySelector('#hamburgerMenu');
+const navigation = document.querySelector('.navList')
+
+menuBtn.addEventListener('click', () => {
+  navigation.classList.add('sidebar');
+  console.log("Button click!")
+});
+
