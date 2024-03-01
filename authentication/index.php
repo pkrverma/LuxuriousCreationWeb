@@ -49,6 +49,11 @@
           </a>
         </div>
         <div class="navbarR">
+        <input type="checkbox" name="" id="check" />
+          <label for="check">
+            <i class="fa-solid fa-bars icon" id="btn"></i>
+            <i class="fa-solid fa-xmark icon" id="cancel"></i>
+          </label>
           <ul class="navList">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../category.html">Category</a></li>
