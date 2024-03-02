@@ -147,7 +147,7 @@ label #cancel {
         position: fixed;
         width: 60%;
         height: 100vh;
-        background-color: #eeede760;
+        background-color: #2828288b;
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
         top: 3.5rem;
@@ -171,8 +171,8 @@ label #cancel {
     }
 
     nav ul.navList li.active a{
-        text-shadow: #979797 2px 2px 4px;
-        color: #00a06d;
+        /* text-shadow: #ffffff 2px 2px 4px; */
+        color: #06d795;
     }
 
     nav ul.navList button {
