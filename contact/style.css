@@ -12,6 +12,8 @@
 #contact .getin {
     width: 320px;
     margin-right: 80px;
+    backdrop-filter: blur(2px);
+    padding: 0.5rem;
 }
 
 #contact .getin h2 {
@@ -27,7 +29,7 @@
     line-height: 24px;
     margin-bottom: 33px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #e5e4ed;
+    border-bottom: 1px solid #ededed;
 }
 
 #contact .getin h3 {
@@ -163,5 +165,25 @@
         width: 90%;
         margin-top: 3rem;
         margin-left: 2rem;
+    }
+}
+
+@media(max-width:500px){
+    #contact .form .form-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact .form .form-row input {
+        width: 100%;
+    }
+
+    #contact .form button{
+        margin: 0 ;
+        width: 100%;
+    }
+
+    .title p {
+        padding-top: 1rem;
     }
 }

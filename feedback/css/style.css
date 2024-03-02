@@ -600,7 +600,8 @@ ul li .Rcheck {
 }
 
 .navbarL img {
-	height: 3.5rem;
+	height: 3.5rem !important;
+	box-sizing: border-box;
 	padding: 0.25rem;
 }
 
@@ -874,7 +875,7 @@ ul li .Rcheck {
 	}
 
 	h1.agile_head {
-		padding-top: 1.3em;
+		padding-top: 5rem;
 		font-size: 2em;
 		letter-spacing: 4px;
 	}

@@ -123,6 +123,7 @@
 
 .form-box h2 {
     font-size: 2em;
+    padding-top: 1rem;
     color: white;
     text-align: center;
 }
@@ -235,7 +236,7 @@ p.forget-inst {
     font-weight: bolder;
 }
 
-@media(max-width:760px){
+@media(max-width:760px) {
     .wrapper .form-box {
         padding: 20px;
     }
@@ -244,15 +245,25 @@ p.forget-inst {
         height: 600px;
     }
 
-    .wrapper.activate{
+    .wrapper.activate {
         height: 450px;
     }
 
-    .input-box{
+    .input-box {
         margin: 20px 0px;
     }
 
-    .wrapper{
+    .wrapper {
         margin-top: 4rem;
+    }
+}
+
+@media(max-width:660px) {
+    .wrapper {
+        width: 80%;
+    }
+
+    .wrapper .form-box {
+        padding: 0.5rem;
     }
 }
