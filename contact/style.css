@@ -153,22 +153,23 @@
     padding-top: 4rem;
 }
 
-@media(max-width:768px){
-    #contact{
+@media(max-width:768px) {
+    #contact {
         padding: 5vw;
         padding-top: 2vw;
         flex-direction: column-reverse;
         width: 100%;
     }
 
-    #contact .getin{
+    #contact .getin {
         width: 90%;
         margin-top: 3rem;
         margin-left: 2rem;
     }
 }
 
-@media(max-width:500px){
+
+@media(max-width:600px) {
     #contact .form .form-row {
         display: flex;
         flex-direction: column;
@@ -177,9 +178,12 @@
     #contact .form .form-row input {
         width: 100%;
     }
+}
 
-    #contact .form button{
-        margin: 0 ;
+@media(max-width:500px) {
+
+    #contact .form button {
+        margin: 0;
         width: 100%;
     }
 

@@ -18,7 +18,7 @@ body {
     background-attachment: fixed;
 }
 
-ul.navList{
+ul.navList {
     padding-left: 0rem;
 }
 
@@ -287,7 +287,8 @@ label #cancel {
 }
 
 .introModel img {
-    height: 11rem;
+    height: auto;
+    width: 100%;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 }
@@ -297,7 +298,7 @@ label #cancel {
     position: absolute;
     bottom: 0.2rem;
     left: 16px;
-    font-size: 30vh;
+    font-size: 8rem;
     opacity: 0.8;
     z-index: 3;
 }
@@ -370,24 +371,37 @@ img.cat-item {
     padding: 0 0rem;
 }
 
-.card:hover {
-    transform: scale(1.05);
+.parentCard {
+    display: flex;
+    flex-direction: column;
 }
 
-.card {
+.cards {
+    display: flex;
+    flex-direction: column;
     border-radius: 10px !important;
-    background-color: #b9b7bd37;
+    background-color: white;
     margin: 0.5rem auto 1rem;
     padding: 0.5rem;
     transition: 0.2s ease-in-out;
-    width: 21em;
+    width: 21rem;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+}
+
+.carddetail p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 55%;
 }
 
 .carddetail {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding-top: 0.5rem;
 }
 
@@ -463,16 +477,16 @@ img.cat-item {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 0.5rem 0.25rem;
-
 }
 
 .secCardDetail {
-    background-color: rgb(255, 255, 255);
-    border: #6C757D 1px solid;
+    border-radius: 10px !important;
+    background-color: #ffffff;
     margin: 0.5rem auto 1rem;
+    padding: 0.5rem;
+    transition: 0.2s ease-in-out;
     width: 21rem;
-    padding: 0.7rem;
-    border-radius: 10px;
+
 }
 
 .secCardDetail button {
@@ -508,7 +522,6 @@ button.buy_now {
     border-radius: 2rem;
     width: 9rem;
     height: 2rem;
-    font-size: 0.9rem;
 }
 
 @media(max-width:768px) {
@@ -516,19 +529,44 @@ button.buy_now {
         margin: 1rem 1rem;
     }
 
+    .buy_fav {
+        display: flex;
+        height: 5rem;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+
     .row1 {
         padding: 1rem;
     }
 
-    .card {
-        width: 20em
+    .cards:hover {
+        transform: none;
+    }
+
+    .secCardDetail {
+        width: 18rem;
+    }
+
+    .cards {
+        width: 18rem;
     }
 
     button.buy_now {
-        width: 8rem;
+        text-align: center;
+        line-height: 1;
+        padding: 0.5rem;
+        width: 100%;
+        transition: all 0.25s ease-in-out;
     }
 
-    .carddetail p {
+    button.buy_now:hover {
+        background-color: #4cffc6 !important;
+        color: rgb(0, 0, 0);
+    }
+
+    .carddetail p,
+    .card-detail {
         font-size: 0.95rem;
     }
 
@@ -542,6 +580,70 @@ button.buy_now {
     }
 }
 
+@media (max-width:640px) {
+
+    .cards,
+    .secCardDetail {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .carddetail,
+    .card-detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .carddetail p,
+    .card-detail p {
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        white-space: nowrap;
+        width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .introModel .cards img,
+    .secCardDetail img {
+        width: 60%;
+        height: auto;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+
+    .parentCard {
+        margin-left: 1rem;
+        display: flex;
+        width: 100%;
+        padding: 0.25rem 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .buy_fav {
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+
+    button.buy_now {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    /* .card-detail{
+        align-items: center;
+    } */
+
+}
+
 @media (max-width:500px) {
     .brand_desc {
         font-size: 0.9rem;
@@ -550,10 +652,24 @@ button.buy_now {
     .alert-dismissible {
         font-size: 0.9rem !important;
     }
+
+    .coverHead {
+        font-size: 3.5rem;
+    }
+
+    .bottom-left {
+        font-size: 5rem;
+    }
+
+    .introModel .cards img,
+    .secCardDetail img {
+        width: 60%;
+        height: auto;
+    }
 }
 
-@media (max-width:300px){
-    .bottom-left{
+@media (max-width:300px) {
+    .bottom-left {
         font-size: 3rem;
     }
 }
@@ -607,4 +723,11 @@ button.buy_now {
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
+}
+
+@media(max-width:640px) {
+    .btn,
+    .card-detail a>button {
+        width: 100%;
+    }
 }
