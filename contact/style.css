@@ -190,4 +190,20 @@
     .title p {
         padding-top: 1rem;
     }
+
+    #contact .form .form-row input {
+        padding: 0.75rem;
+    }
+
+    #contact .form .form-col input,
+    #contact .form .form-col textarea {
+        padding: 0.75rem;
+    }
+}
+
+@media(max-width:500px) {
+
+    #contact .form p {
+        padding-bottom: 0;
+    }
 }
