@@ -207,3 +207,18 @@
         padding-bottom: 0;
     }
 }
+
+@media(max-width:380px) {
+
+    #contact .form {
+        width: 100%;
+    }
+}
+
+@media(max-width:380px) {
+    #contact .getin {
+        margin-left: 0rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+}

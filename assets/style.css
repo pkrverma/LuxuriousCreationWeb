@@ -296,7 +296,7 @@ label #cancel {
         color: white;
     }
 
-    .dropdown a{
+    .dropdown a {
         color: black;
     }
 
@@ -479,15 +479,27 @@ img.cat-item {
     .secHead p {
         padding-top: 1rem;
     }
-}
 
-@media (max-width:380px) {
     .coverHead {
         font-size: 3rem;
     }
 
     .cover {
         padding-left: 1rem;
+    }
+}
+
+@media (max-width:380px) {
+    .coverHead {
+        font-size: 2.75rem;
+    }
+
+    .cover {
+        padding-left: 0.5rem;
+    }
+
+    .tagline {
+        font-size: 0.75rem;
     }
 
     .title {
@@ -502,7 +514,12 @@ img.cat-item {
     }
 }
 
-@media (max-width:380px) {}
+@media (max-width:380px) {
+
+    .bottom-left {
+        font-size: 3.5rem;
+    }
+}
 
 .row1 {
     display: flex;
@@ -847,6 +864,24 @@ button.buy_now {
     .carddetail p,
     .card-detail p {
         width: 55%;
+    }
+}
+
+@media (max-width:330px) {
+    .buy_fav {
+        display: flex;
+        flex-direction: column;
+        height: 5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    button.buy_now {
+        width: 100%;
+
+    }
+
+    .subhead {
+        width: 80%;
     }
 }
 

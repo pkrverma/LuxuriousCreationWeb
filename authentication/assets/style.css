@@ -154,7 +154,7 @@
 }
 
 .input-box input {
-    width: 90%;
+    width: 100%;
     height: 100%;
     background: transparent;
     border: none;
@@ -265,5 +265,44 @@ p.forget-inst {
 
     .wrapper .form-box {
         padding: 0.5rem;
+    }
+}
+
+@media(max-width:390px) {
+
+    .form-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-box label {
+        font-size: 0.85rem;
+    }
+
+    .remember-forget {
+        margin-top: -0.5rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .wrapper.active {
+        height: 40rem;
+    }
+    .wrapper .form-box {
+        width: 90%;
+    }
+}
+
+@media(max-width:330px) {
+    .wrapper .form-box {
+        width: 90%;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .wrapper.active {
+        height: 40rem;
     }
 }
