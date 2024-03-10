@@ -14,7 +14,7 @@ while($rows=$result->fetch_assoc()){
 
 if($flag){
     // echo "<h1>Welcome: ".$Username."<h1>";
-    echo '<script>alert("Login Successful!"); location.replace(document.referrer);</script>';
+    echo '<script>alert("Login Successful!"); window.location.href="../user.html";</script>';
 }else{
     // echo "Invalid Username or Password!";
     echo '<script>alert("Invalid Username or Password!"); location.replace(document.referrer);</script>';

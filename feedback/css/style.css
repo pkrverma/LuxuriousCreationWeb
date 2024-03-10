@@ -805,7 +805,8 @@ ul li .Rcheck {
 		font-size: 1.7rem;
 	}
 
-	.navList li a {
+	.navList li a,
+    .dropdown a {
 		font-size: 0.9rem;
 	}
 

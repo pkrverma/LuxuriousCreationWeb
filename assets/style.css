@@ -77,7 +77,8 @@ ul.navList {
     margin-left: 1.5rem;
 }
 
-.navList li a {
+.navList li a,
+.dropdown a {
     font-size: 1rem;
     text-decoration: none;
     color: black;
@@ -137,6 +138,56 @@ label #cancel {
     padding-right: 0.75rem;
 }
 
+/* Dropdown Button */
+.dropbtn {
+    background-color: #069f6e;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    border: none;
+    background-color: none;
+    padding: 0.25rem 0.75rem;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 10rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: -4rem;
+    border-radius: 0.5rem;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #027a54;
+    background-color: #069f6f45;
+}
+
+.show {
+    display: block;
+}
+
 @media(max-width:880px) {
     .navList button {
         margin: auto 0.5rem;
@@ -150,6 +201,14 @@ label #cancel {
     .navbarL h1 {
         font-size: 2rem;
     }
+
+    .dropdown button {
+        padding: 0.25rem 0.75rem;
+    }
+
+    .dropdown-content {
+        left: -5rem;
+    }
 }
 
 @media(max-width:784px) {
@@ -157,7 +216,8 @@ label #cancel {
         font-size: 1.7rem;
     }
 
-    .navList li a {
+    .navList li a,
+    .dropdown a {
         font-size: 0.9rem;
     }
 
@@ -167,6 +227,10 @@ label #cancel {
 
     .navList li {
         margin-left: 1rem;
+    }
+
+    .dropdown button {
+        padding: 0.25rem 0.75rem;
     }
 }
 
@@ -175,7 +239,8 @@ label #cancel {
         font-size: 1.7rem;
     }
 
-    .navList li a {
+    .navList li a,
+    .dropdown a {
         font-size: 0.9rem;
     }
 
@@ -185,6 +250,10 @@ label #cancel {
 
     .navList li {
         margin-left: 1rem;
+    }
+
+    .dropdown button {
+        padding: 0.25rem 0.75rem;
     }
 }
 
@@ -213,17 +282,22 @@ label #cancel {
 
     nav ul.navList {
         display: block;
-        padding-top: 3rem;
+        padding-top: 2rem;
     }
 
     nav ul.navList li {
         margin: 0;
-        padding: 1.5rem 0.5rem;
+        padding: 1.3rem 0.5rem;
     }
 
-    nav ul.navList li a {
+    nav ul.navList li a,
+    .dropdown a {
         font-size: 1.1rem;
         color: white;
+    }
+
+    .dropdown a{
+        color: black;
     }
 
     nav ul.navList li.active a {
@@ -244,6 +318,20 @@ label #cancel {
 
     #check:checked~label #cancel {
         display: block;
+    }
+
+    .dropdown button {
+        padding: 0.25rem 0.75rem;
+        background-color: transparent;
+        color: white;
+    }
+
+    .dropdown button:hover {
+        background-color: #069f6e;
+    }
+
+    .dropdown-content {
+        left: 0;
     }
 }
 
@@ -382,12 +470,13 @@ img.cat-item {
     .head {
         width: 100% !important;
     }
-    .secHead{
+
+    .secHead {
         margin: 1rem 0 0 1rem;
         padding-top: 1rem !important;
     }
 
-    .secHead p{
+    .secHead p {
         padding-top: 1rem;
     }
 }
@@ -413,9 +502,7 @@ img.cat-item {
     }
 }
 
-@media (max-width:380px) {
-    
-}
+@media (max-width:380px) {}
 
 .row1 {
     display: flex;
