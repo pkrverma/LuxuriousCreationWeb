@@ -74,13 +74,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
             <li><a href="../index.html">Home</a></li>
             <li><a href="../category.html">Category</a></li>
             <li class="active">
-              <a href="index.html">Feedback</a>
+              <a href="index.php">Feedback</a>
             </li>
             <li>
-              <a href="../contact/index.html">Contact Us</a>
+              <a href="../contact/index.php">Contact Us</a>
             </li>
             <button>
-              <a href="../authentication/index.html">Login/Register</a>
+              <a href="../authentication/index.php">Login/Register</a>
             </button>
           </ul>
         </div>

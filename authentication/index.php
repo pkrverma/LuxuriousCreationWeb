@@ -58,13 +58,13 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="../category.html">Category</a></li>
             <li>
-              <a href="../feedback/index.html">Feedback</a>
+              <a href="../feedback/index.php">Feedback</a>
             </li>
             <li>
-              <a href="../contact/index.html">Contact Us</a>
+              <a href="../contact/index.php">Contact Us</a>
             </li>
             <button class="active">
-              <a href="index.html">Login/Register</a>
+              <a href="index.php">Login/Register</a>
             </button>
           </ul>
         </div>

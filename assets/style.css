@@ -287,7 +287,7 @@ label #cancel {
 
     nav ul.navList li {
         margin: 0;
-        padding: 1.3rem 0.5rem;
+        padding: 1rem 0.5rem;
     }
 
     nav ul.navList li a,
@@ -306,6 +306,7 @@ label #cancel {
 
     nav ul.navList button {
         font-size: 1.1rem;
+        margin: 1rem 0.5rem;
     }
 
     #check:checked~ul {
@@ -332,6 +333,8 @@ label #cancel {
 
     .dropdown-content {
         left: 0;
+        height: 9rem;
+        overflow-y: auto;
     }
 }
 
