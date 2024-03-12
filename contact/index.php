@@ -29,35 +29,46 @@
   </head>
 
   <body>
-
-    
     <!-- navigation -->
     <nav>
       <div class="navdiv">
         <div class="navbarL">
-          <a href="../index.html">
+          <a href="../welcome/user.html">
             <img src="../images/Logo.jpg" alt="Logo" />
             <h1 class="brandName">Luxurious Creation</h1>
           </a>
         </div>
         <div class="navbarR">
-        <input type="checkbox" name="" id="check" />
+          <input type="checkbox" name="" id="check" />
           <label for="check">
             <i class="fa-solid fa-bars icon" id="btn"></i>
             <i class="fa-solid fa-xmark icon" id="cancel"></i>
           </label>
           <ul class="navList">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../category.html">Category</a></li>
+            <li><a href="../welcome/user.html">Home</a></li>
+            <li><a href="../welcome/category.html">Category</a></li>
             <li>
               <a href="../feedback/index.php">Feedback</a>
             </li>
             <li class="active">
               <a href="index.php">Contact Us</a>
             </li>
-            <button>
-              <a href="../authentication/index.php">Login/Register</a>
-            </button>
+            <div class="dropdown">
+              <button onclick="dropDownFunction()" class="dropbtn">
+                <i class="fa-solid fa-user"></i> &nbsp;Me
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">My Account</a>
+                <a href="#">My Cart</a>
+                <a href="#">Order History</a>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >Logout</a
+                >
+              </div>
+            </div>
           </ul>
         </div>
       </div>
