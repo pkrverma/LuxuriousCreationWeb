@@ -57,12 +57,12 @@
           <ul class="navList">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../category.html">Category</a></li>
-            <li>
+            <!-- <li>
               <a href="../feedback/index.php">Feedback</a>
             </li>
             <li>
               <a href="../contact/index.php">Contact Us</a>
-            </li>
+            </li> -->
             <button class="active">
               <a href="index.php">Login/Register</a>
             </button>
