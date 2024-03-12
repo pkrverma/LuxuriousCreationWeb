@@ -39,3 +39,21 @@ window.onclick = function (event) {
     }
   }
 }
+
+//logout user from logged in page
+
+function logoutUser() {
+  window.location.replace("../index.html");
+}
+
+// redirect to login page
+function loginPage() {
+  window.location.replace("../authentication/index.html");
+}
+
+//welcome message after login
+
+function welcomeMsg() {
+  let msg = document.querySelector('.introModel').innerText;
+  console.log(msg);
+}

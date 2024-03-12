@@ -683,6 +683,10 @@ button.buy_now {
     width: 9rem;
     height: 2rem;
 }
+.buy_now.btn-disable{
+    opacity: 0.75;
+    cursor:help;
+}
 
 @media(max-width:768px) {
     .base {
