@@ -57,3 +57,9 @@ function welcomeMsg() {
   let msg = document.querySelector('.introModel').innerText;
   console.log(msg);
 }
+
+// includes html
+
+function includeFile(){
+  $("#header_file").load("../includes/header.html");
+}

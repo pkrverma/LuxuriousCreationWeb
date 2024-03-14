@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
   <head>
     <title>Feedback | Luxurious Creation</title>
 
-    <link rel="icon" href="../images/Logo.jpg" />
+    <link rel="icon" href="../../assets/images/Logo.jpg" />
     <!-- custom-theme -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -33,7 +33,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
     <!-- //custom-theme -->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link
-      href="../assets/style.css"
+      href="../../assets/css/style.css"
       rel="stylesheet"
       type="text/css"
       media="all"
@@ -45,8 +45,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
       href="https://fonts.googleapis.com/css2?family=Alegreya&family=Allura&family=Libre+Baskerville&family=Rokkitt:wght@300;400&family=Taviraj&family=Ysabeau+Infant&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -61,8 +69,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
     <nav>
       <div class="navdiv">
         <div class="navbarL">
-        <a href="../welcome/user.html">
-            <img src="../images/Logo.jpg" alt="Logo" />
+          <a href="../welcome/user.html">
+            <img src="../../assets/images/Logo.jpg" alt="Logo" />
             <h1 class="brandName">Luxurious Creation</h1>
           </a>
         </div>
@@ -73,8 +81,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
             <i class="fa-solid fa-xmark icon" id="cancel"></i>
           </label>
           <ul class="navList">
-            <li><a href="../welcome/user.html">Home</a></li>
-            <li><a href="../welcome/category.html">Category</a></li>
+            <li><a href="../user.html">Home</a></li>
+            <li><a href="../category.html">Category</a></li>
             <li class="active">
               <a href="index.php">Feedback</a>
             </li>
@@ -221,6 +229,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
         <p></p>
       </div>
     </section>
-    <script src="../assets/script.js"></script>
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>
