@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Allura&family=Libre+Baskerville&family=Rokkitt:wght@300;400&family=Taviraj&family=Ysabeau+Infant&display=swap");
 /* Registration */
 
 #login {
@@ -285,9 +286,11 @@ p.forget-inst {
         flex-direction: column;
         justify-content: space-between;
     }
+
     .wrapper.active {
         height: 40rem;
     }
+
     .wrapper .form-box {
         width: 90%;
     }

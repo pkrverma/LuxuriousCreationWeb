@@ -60,6 +60,13 @@ function welcomeMsg() {
 
 // includes html
 
-function includeFile(){
-  $("#header_file").load("../includes/header.html");
-}
+const navtab = document.querySelector('.nav_file');
+fetch('/navBar.html')
+  .then(res => res.text())
+  .then(data => {
+    navtab.innerHTML = data;
+  })
+
+// function includeHeader(){
+//   $("#header_file").load("../../includes/header.html");
+// }
