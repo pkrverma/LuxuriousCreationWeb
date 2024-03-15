@@ -57,16 +57,3 @@ function welcomeMsg() {
   let msg = document.querySelector('.introModel').innerText;
   console.log(msg);
 }
-
-// includes html
-
-const navtab = document.querySelector('.nav_file');
-fetch('/navBar.html')
-  .then(res => res.text())
-  .then(data => {
-    navtab.innerHTML = data;
-  })
-
-// function includeHeader(){
-//   $("#header_file").load("../../includes/header.html");
-// }

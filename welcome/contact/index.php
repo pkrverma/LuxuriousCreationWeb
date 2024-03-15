@@ -35,52 +35,9 @@
     <link rel="icon" href="../assets/images/Logo.jpg" />
   </head>
 
-  <body>
+  <body onload="classReuse();changetag()">
     <!-- navigation -->
-    <nav>
-      <div class="navdiv">
-        <div class="navbarL">
-          <a href="../user.html">
-            <img src="../../assets/images/Logo.jpg" alt="Logo" />
-            <h1 class="brandName">Luxurious Creation</h1>
-          </a>
-        </div>
-        <div class="navbarR">
-          <input type="checkbox" name="" id="check" />
-          <label for="check">
-            <i class="fa-solid fa-bars icon" id="btn"></i>
-            <i class="fa-solid fa-xmark icon" id="cancel"></i>
-          </label>
-          <ul class="navList">
-            <li><a href="../user.html">Home</a></li>
-            <li><a href="../category.html">Category</a></li>
-            <li>
-              <a href="../feedback/index.php">Feedback</a>
-            </li>
-            <li class="active">
-              <a href="index.php">Contact Us</a>
-            </li>
-            <div class="dropdown">
-              <button onclick="dropDownFunction()" class="dropbtn">
-                <i class="fa-solid fa-user"></i> &nbsp;Me
-              </button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="#">My Account</a>
-                <a href="#">My Cart</a>
-                <a href="#">Order History</a>
-                <a
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                  >Logout</a
-                >
-              </div>
-            </div>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+    <nav id="navFile"></nav>
     <!-- navigation -->
 
     <!-- Contact-Home -->
@@ -191,6 +148,14 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
 
+    <!-- Js library script link -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- Bootstrap js script link -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -198,7 +163,34 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Js library script link -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- Custom js script link -->
     <script src="../assets/js/script.js"></script>
+    <script>
+      $(function () {
+        $("#navFile").load("../../includes/navBar/navBarUser.html");
+      });
+
+      function classReuse() {
+        var contact = document.getElementById("contactpage");
+        contact.classList.add("active");
+      }
+
+      function changetag() {
+        document.getElementById("homepage").innerHTML =
+          '<a href="../user.html">Home</a>';
+        document.getElementById("categorypage").innerHTML =
+          '<a href="../category.html">Category</a>';
+        document.getElementById("feedbackpage").innerHTML =
+          '<a href="../feedback/index.php">Feedback</a>';
+      }
+    </script>
   </body>
 </html>

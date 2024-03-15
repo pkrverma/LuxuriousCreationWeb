@@ -59,7 +59,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
     <nav>
       <div class="navdiv">
         <div class="navbarL">
-          <a href="../welcome/user.html">
+          <a href="user.html">
             <img src="../../assets/images/Logo.jpg" alt="Logo" />
             <h1 class="brandName">Luxurious Creation</h1>
           </a>
@@ -70,13 +70,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
             <i class="fa-solid fa-bars icon" id="btn"></i>
             <i class="fa-solid fa-xmark icon" id="cancel"></i>
           </label>
-          <ul class="navList">
-            <li><a href="../user.html">Home</a></li>
-            <li><a href="../category.html">Category</a></li>
-            <li class="active">
+          <ul class="navList" id="navList">
+            <li id="homepage"><a href="../user.html">Home</a></li>
+            <li id="categorypage"><a href="../category.html">Category</a></li>
+            <li id="feedbackpage">
               <a href="index.php">Feedback</a>
             </li>
-            <li>
+            <li id="contactpage">
               <a href="../contact/index.php">Contact Us</a>
             </li>
             <div class="dropdown">
@@ -88,7 +88,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
                 <a href="#">My Cart</a>
                 <a href="#">Order History</a>
                 <a
-                  href="#"
+                  href="../../index.html"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                   >Logout</a
@@ -98,8 +98,47 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
           </ul>
         </div>
       </div>
+
+      <!-- <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Luxurious Creation: Visualize Around Yourself With AR
+              </h1>
+            </div>
+            <div class="modal-body">
+              Do you really want to logout from website?
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="logoutUser()"
+              >
+                Yes, sure!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
     </nav>
 
+
+    <!-- main body -->
     <section id="feed">
       <h1 class="agile_head text-center">Feedback Form</h1>
       <div class="w3layouts_main wrap">
@@ -222,5 +261,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
 
     <!-- Custom js script link -->
     <script src="../assets/js/script.js"></script>
+    <script>
+      // $(function () {
+      //   $("#navFile").load("../../includes/navBar/navBarUser.html");
+      // });
+
+      function classReuse() {
+        var feedback = document.getElementById("feedbackpage");
+        feedback.classList.add("active");
+      }
+
+      // function changetag() {
+      //   document.getElementById("homepage").innerHTML =
+      //     '<a href="../user.html">Home</a>';
+      //   document.getElementById("categorypage").innerHTML =
+      //     '<a href="../category.html">Category</a>';
+      //   document.getElementById("contactypage").innerHTML =
+      //     '<a href="../contact/index.html">Category</a>';
+      // }
+    </script>
   </body>
 </html>

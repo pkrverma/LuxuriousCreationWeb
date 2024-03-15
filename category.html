@@ -34,38 +34,13 @@
     <link rel="icon" href="assets/images/Logo.jpg" />
   </head>
 
-  <body>
-    <!-- navigation -->
-    <nav>
-      <div class="navdiv">
-        <div class="navbarL">
-          <a href="index.html">
-            <img src="assets/images/Logo.jpg" alt="Logo" />
-            <h1 class="brandName">Luxurious Creation</h1>
-          </a>
-        </div>
-        <div class="navbarR">
-          <input type="checkbox" name="" id="check" />
-          <label for="check">
-            <i class="fa-solid fa-bars icon" id="btn"></i>
-            <i class="fa-solid fa-xmark icon" id="cancel"></i>
-          </label>
-          <ul class="navList">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="category.html">Category</a></li>
-            <!-- <li>
-              <a href="feedback/index.html">Feedback</a>
-            </li>
-            <li>
-              <a href="contact/index.html">Contact Us</a>
-            </li> -->
-            <button>
-              <a href="authentication/index.html">Login/Register</a>
-            </button>
-          </ul>
-        </div>
-      </div>
+  <body onload="classReuse()">
+    <nav id="navFile"></nav>
 
+    <!-- navigation end-->
+
+    <!-- main content -->
+    <main>
       <div class="introModel">
         <div class="title">Explore Categories</div>
         <div
@@ -81,254 +56,255 @@
             aria-label="Close"
           ></button>
         </div>
-      </div>
-    </nav>
-
-    <!-- navigation end-->
-
-    <!-- main content -->
-    <main>
-      <!-- =====Trending Box===== -->
-
-      <div class="base">
-        <div class="secHead">
-          <p>TRENDING ITEMS</p>
-        </div>
-        <div class="row1">
-          <div class="cards">
-            <img src="assets/images/bed1.png" alt="Bed" class="obj1" />
-            <div class="parentCard">
-              <div class="carddetail">
-                <p>King size bed</p>
-                <a href="models/bed1/bed1 default/index.html">
-                  <button
-                    type="button"
-                    class="btn btn-outline-secondary"
-                    style="
-                      --bs-btn-padding-y: 0.35rem;
-                      --bs-btn-padding-x: 1rem;
-                      --bs-btn-font-size: 0.75rem;
-                    "
-                  >
-                    View In AR
-                  </button></a
-                >
-              </div>
-              <div class="buy_fav">
-                <button
-                  class="buy_now btn-disable"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Buy Now
-                </button>
-                <button
-                  class="buy_now btn-disable"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Get Customised
-                </button>
-              </div>
-            </div>
+        <!-- =====Trending Box===== -->
+        <div class="base">
+          <div class="secHead">
+            <p>TRENDING ITEMS</p>
           </div>
-
-          <div class="cards">
-            <img
-              src="assets/images/table2Corner.png"
-              alt="Corner Table"
-              class="obj2"
-            />
-            <div class="parentCard">
-              <div class="carddetail">
-                <p>Corner Set</p>
-                <a href="models/table2Corner/table2 default/index.html">
-                  <button
-                    type="button"
-                    class="btn btn-outline-secondary"
-                    style="
-                      --bs-btn-padding-y: 0.35rem;
-                      --bs-btn-padding-x: 1rem;
-                      --bs-btn-font-size: 0.75rem;
-                    "
+          <div class="row1">
+            <div class="cards">
+              <img src="assets/images/bed1.png" alt="Bed" class="obj1" />
+              <div class="parentCard">
+                <div class="carddetail">
+                  <p>King size bed</p>
+                  <a href="models/bed1/bed1 default/index.html">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      style="
+                        --bs-btn-padding-y: 0.35rem;
+                        --bs-btn-padding-x: 1rem;
+                        --bs-btn-font-size: 0.75rem;
+                      "
+                    >
+                      View In AR
+                    </button></a
                   >
-                    View In AR
-                  </button></a
-                >
-              </div>
-              <div class="buy_fav">
-                <button
-                  class="buy_now btn-disable"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Buy Now
-                </button>
-                <button
-                  class="buy_now btn-disable"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Get Customised
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="cards">
-            <img src="assets/images/sofaset1.png" alt="Sofa Set" class="obj3" />
-            <div class="parentCard">
-              <div class="carddetail">
-                <p>Sofa - Classic Furniture Set</p>
-                <a href="models/sofaset1/sofaset1 default/index.html">
+                </div>
+                <div class="buy_fav">
                   <button
-                    type="button"
-                    class="btn btn-outline-secondary"
-                    style="
-                      --bs-btn-padding-y: 0.35rem;
-                      --bs-btn-padding-x: 1rem;
-                      --bs-btn-font-size: 0.75rem;
-                    "
+                    class="buy_now btn-disable"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
                   >
-                    View In AR
+                    Buy Now
                   </button>
-                </a>
-              </div>
-              <div class="buy_fav">
-                <button
-                  class="buy_now btn-disable"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Buy Now
-                </button>
-                <button
-                  class="buy_now btn-disable"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Get Customised
-                </button>
+                  <button
+                    class="buy_now btn-disable"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Get Customised
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="cards">
-            <img
-              src="assets/images/childBed1.png"
-              alt="Baby Bed"
-              class="obj4"
-            />
-            <div class="parentCard">
-              <div class="carddetail">
-                <p>Baby Bed</p>
-
-                <a href="models/childBed1/childBed1 default/index.html">
-                  <button
-                    type="button"
-                    class="btn btn-outline-secondary"
-                    style="
-                      --bs-btn-padding-y: 0.35rem;
-                      --bs-btn-padding-x: 1rem;
-                      --bs-btn-font-size: 0.75rem;
-                    "
+            <div class="cards">
+              <img
+                src="assets/images/table2Corner.png"
+                alt="Corner Table"
+                class="obj2"
+              />
+              <div class="parentCard">
+                <div class="carddetail">
+                  <p>Corner Set</p>
+                  <a href="models/table2Corner/table2 default/index.html">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      style="
+                        --bs-btn-padding-y: 0.35rem;
+                        --bs-btn-padding-x: 1rem;
+                        --bs-btn-font-size: 0.75rem;
+                      "
+                    >
+                      View In AR
+                    </button></a
                   >
-                    View In AR
-                  </button></a
-                >
-              </div>
-              <div class="buy_fav">
-                <button
-                  class="buy_now btn-disable"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Buy Now
-                </button>
-                <button
-                  class="buy_now btn-disable"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Get Customised
-                </button>
+                </div>
+                <div class="buy_fav">
+                  <button
+                    class="buy_now btn-disable"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Buy Now
+                  </button>
+                  <button
+                    class="buy_now btn-disable"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Get Customised
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="cards">
-            <img src="assets/images/sofaset2.png" alt="Sofa Set" class="obj5" />
-            <div class="parentCard">
-              <div class="carddetail">
-                <p>Sofa Set with circluar table</p>
-                <a href="models/sofaset2/sofaset2 default/index.html">
+            <div class="cards">
+              <img
+                src="assets/images/sofaset1.png"
+                alt="Sofa Set"
+                class="obj3"
+              />
+              <div class="parentCard">
+                <div class="carddetail">
+                  <p>Sofa - Classic Furniture Set</p>
+                  <a href="models/sofaset1/sofaset1 default/index.html">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      style="
+                        --bs-btn-padding-y: 0.35rem;
+                        --bs-btn-padding-x: 1rem;
+                        --bs-btn-font-size: 0.75rem;
+                      "
+                    >
+                      View In AR
+                    </button>
+                  </a>
+                </div>
+                <div class="buy_fav">
                   <button
-                    type="button"
-                    class="btn btn-outline-secondary"
-                    style="
-                      --bs-btn-padding-y: 0.35rem;
-                      --bs-btn-padding-x: 1rem;
-                      --bs-btn-font-size: 0.75rem;
-                    "
+                    class="buy_now btn-disable"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
                   >
-                    View In AR
-                  </button></a
-                >
-              </div>
-              <div class="buy_fav">
-                <button
-                  class="buy_now btn-disable"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Buy Now
-                </button>
-                <button
-                  class="buy_now btn-disable"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Get Customised
-                </button>
+                    Buy Now
+                  </button>
+                  <button
+                    class="buy_now btn-disable"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Get Customised
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="cards">
-            <img src="assets/images/table1.png" alt="Table" class="obj6" />
-            <div class="parentCard">
-              <div class="carddetail">
-                <p>Table</p>
+            <div class="cards">
+              <img
+                src="assets/images/childBed1.png"
+                alt="Baby Bed"
+                class="obj4"
+              />
+              <div class="parentCard">
+                <div class="carddetail">
+                  <p>Baby Bed</p>
 
-                <a href="models/table1/table1 default/index.html">
-                  <button
-                    type="button"
-                    class="btn btn-outline-secondary"
-                    style="
-                      --bs-btn-padding-y: 0.35rem;
-                      --bs-btn-padding-x: 1rem;
-                      --bs-btn-font-size: 0.75rem;
-                    "
+                  <a href="models/childBed1/childBed1 default/index.html">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      style="
+                        --bs-btn-padding-y: 0.35rem;
+                        --bs-btn-padding-x: 1rem;
+                        --bs-btn-font-size: 0.75rem;
+                      "
+                    >
+                      View In AR
+                    </button></a
                   >
-                    View In AR
-                  </button></a
-                >
+                </div>
+                <div class="buy_fav">
+                  <button
+                    class="buy_now btn-disable"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Buy Now
+                  </button>
+                  <button
+                    class="buy_now btn-disable"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Get Customised
+                  </button>
+                </div>
               </div>
-              <div class="buy_fav">
-                <button
-                  class="buy_now btn-disable"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Buy Now
-                </button>
-                <button
-                  class="buy_now btn-disable"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Get Customised
-                </button>
+            </div>
+
+            <div class="cards">
+              <img
+                src="assets/images/sofaset2.png"
+                alt="Sofa Set"
+                class="obj5"
+              />
+              <div class="parentCard">
+                <div class="carddetail">
+                  <p>Sofa Set with circluar table</p>
+                  <a href="models/sofaset2/sofaset2 default/index.html">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      style="
+                        --bs-btn-padding-y: 0.35rem;
+                        --bs-btn-padding-x: 1rem;
+                        --bs-btn-font-size: 0.75rem;
+                      "
+                    >
+                      View In AR
+                    </button></a
+                  >
+                </div>
+                <div class="buy_fav">
+                  <button
+                    class="buy_now btn-disable"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Buy Now
+                  </button>
+                  <button
+                    class="buy_now btn-disable"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Get Customised
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+              <img src="assets/images/table1.png" alt="Table" class="obj6" />
+              <div class="parentCard">
+                <div class="carddetail">
+                  <p>Table</p>
+
+                  <a href="models/table1/table1 default/index.html">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      style="
+                        --bs-btn-padding-y: 0.35rem;
+                        --bs-btn-padding-x: 1rem;
+                        --bs-btn-font-size: 0.75rem;
+                      "
+                    >
+                      View In AR
+                    </button></a
+                  >
+                </div>
+                <div class="buy_fav">
+                  <button
+                    class="buy_now btn-disable"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Buy Now
+                  </button>
+                  <button
+                    class="buy_now btn-disable"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Get Customised
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -605,7 +581,25 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Js library script link -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- Custom js script link -->
     <script src="assets/js/script.js"></script>
+    <script>
+      $(function () {
+        $("#navFile").load("includes/navBar/navBarAno.html");
+      });
+
+      function classReuse() {
+        var category = document.getElementById("categorypage");
+        category.classList.add("active");
+      }
+    </script>
   </body>
 </html>
