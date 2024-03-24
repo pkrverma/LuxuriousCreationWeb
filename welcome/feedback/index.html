@@ -92,7 +92,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
               <button onclick="dropDownFunction()" class="dropbtn">
                 <i class="fa-solid fa-user"></i> &nbsp;Me
               </button>
-              <div id="myDropdown" class="dropdown-content">
+              <div id="myDropdown" class="dropdown-contentA">
                 <a href="#">My Account</a>
                 <a href="#">My Cart</a>
                 <a href="#">Order History</a>
@@ -152,7 +152,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
         <h3>
           Please help us to serve you better by taking a couple of minutes.
         </h3>
-        <form action="feedback.php" method="post" class="agile_form">
+        <form
+          action="../../includes/databaseConn/feedback.php"
+          method="post"
+          class="agile_form"
+        >
           <h2>Which category of product you tried from our site?</h2>
           <ul class="agile_info_select" required>
             <li>

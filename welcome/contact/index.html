@@ -100,7 +100,7 @@
         <div class="form">
           <h4>Let's Connect</h4>
           <p>Lets break the ice and give us opportunity to assist you</p>
-          <form action="contact.php" method="post">
+          <form action="../../includes/databaseConn/contact.php" method="post">
             <div class="form-row">
               <input type="text" placeholder="Your Name" name="name" id="" />
               <input type="email" placeholder="Your Email" name="email" id="" />
@@ -175,6 +175,9 @@
     <!-- Custom js script link -->
     <script src="../../assets/js/script.js"></script>
     <script>
+      function logoutUser() {
+        window.location.replace("../../index.html");
+      }
       $(function () {
         $("#navFile").load("../../includes/navBar/navBarUser.html");
       });
