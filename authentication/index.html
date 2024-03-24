@@ -35,7 +35,7 @@
     <link rel="icon" href="../assets/images/Logo.jpg" />
   </head>
 
-  <body onload="classReuse(); changetag()">
+  <body>
     <!-- navigation -->
     <nav id="navFile"></nav>
 
@@ -273,12 +273,13 @@
     <script>
       $(function () {
         $("#navFile").load("../includes/navBar/navBarAno.html");
+        changetag();
       });
 
-      function classReuse() {
-        var authenticate = document.getElementById("authenticatepage");
-        authenticate.classList.add("active");
-      }
+      // function classReuse() {
+      //   var authenticate = document.getElementById("authenticatepage");
+      //   authenticate.classList.add("active");
+      // }
 
       function changetag() {
         document.getElementById("homepage").innerHTML =
@@ -286,7 +287,7 @@
         document.getElementById("categorypage").innerHTML =
           '<a href="../category.html">Category</a>';
         document.getElementById("authenticatepage").innerHTML =
-          '<a href="http://localhost/Home%20Decor-xampp/authentication/index.php">Login/Register</a>';
+          '<a href="index.html" class="active">Login/Register</a>';
       }
     </script>
   </body>

@@ -1,4 +1,4 @@
-//login-registration window
+//======login-registration window======
 
 const wrapper = document.querySelector('.wrapper')
 const loginLink = document.querySelector('.login-link')
@@ -20,13 +20,11 @@ menuBtn.addEventListener('click', () => {
   console.log("Button click!")
 });
 
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+// ======DropDown Function======
 function dropDownFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-contentA");
@@ -40,27 +38,28 @@ window.onclick = function (event) {
   }
 }
 
-//logout user from logged in page
 
+//======logout user from logged in page======
 function logoutUser() {
   window.location.replace("../index.html");
 }
 
-// redirect to login page
+// ======redirect to login page======
 function loginPage() {
   window.location.replace("../authentication/index.html");
 }
 
 
-// contact Anonymous
+// ======contact Anonymous======
+
+// ======verify E-Mail======
 var otpVal;
 function sendMail() {
   const email = document.querySelector('input[type="email"]');
   const otpbutton = document.querySelector('#otpbtn');
   const verifybutton = document.querySelector('#verifybtn');
 
-
-  // =====generate OTP=====
+  // generate OTP
   const otpLength = 6;
   const randomNumber = Math.floor(Math.random() * 1000000);
   const randomString = randomNumber.toString();
@@ -77,7 +76,7 @@ function sendMail() {
 
   Email.send({
     SecureToken: "314209bb-7b82-4dd5-919d-7d9286a7d706",
-    To: 'xyz@gmail.com',
+    To: email.value,
     From: "luxuriouscreation02@gmail.com",
     Subject: "Email Verification OTP from Luxurious Creation",
     Body: emailBody,
@@ -97,6 +96,8 @@ function sendMail() {
   );
 }
 
+
+// ======Verify OTP======
 function verifyMail() {
   // let box = document.getElementById('messagebox');
   const otpInp = document.querySelector('[name="otp"]').value;
@@ -109,4 +110,20 @@ function verifyMail() {
   else {
     alert("Invalid OTP! Try Again");
   }
+}
+
+
+// ======category Tabs======
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabContent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" activeTab", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " activeTab";
 }

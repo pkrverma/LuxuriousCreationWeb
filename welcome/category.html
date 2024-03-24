@@ -42,25 +42,35 @@
 
     <!-- main content -->
     <main>
-      <div class="introModel">
-        <div class="title">Explore Categories</div>
-        <div
-          class="alert alert-warning alert-dismissible fade show"
-          role="alert"
-        >
-          To visualise our product in your space, Open our website
-          <strong>Luxurious Creation</strong> on your Android Device.
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="alert"
-            aria-label="Close"
-          ></button>
-        </div>
+      <div class="introModel"></div>
+      <div class="title">Explore Categories</div>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        To visualise our product in your space, Open our website
+        <strong>Luxurious Creation</strong> on your Android Device.
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
 
+      <div class="categoryTab">
+        <button class="tablinks" onclick="openTab(event, 'allViewTab')">
+          All Categories
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'bedTab')">Bed</button>
+        <button class="tablinks" onclick="openTab(event, 'tableTab')">
+          Table
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'comboTab')">
+          Combo
+        </button>
+      </div>
+
+      <section id="allViewTab" class="tabContent">
         <!-- =====Trending Box===== -->
-
-        <div class="base">
+        <section class="base">
           <div class="secHead">
             <p>TRENDING ITEMS</p>
           </div>
@@ -85,10 +95,7 @@
                   >
                 </div>
                 <div class="buy_fav">
-                  <!-- <a href="contact/index.html"> -->
-                  <button class="buy_now">Buy Now</button
-                  ><!--</a
-                  > -->
+                  <button class="buy_now">Buy Now</button>
                   <a href="contact/index.html"
                     ><button class="buy_now">Get Customised</button></a
                   >
@@ -254,15 +261,13 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
 
-      <!-- display Item sectionwise -->
+        <!-- display Item sectionwise -->
 
-      <!-- beds -->
+        <!-- beds -->
 
-      <section class="disp" id="bed">
-        <div class="base">
+        <section class="base" id="bed">
           <div class="secHead">
             <p>BEDS</p>
           </div>
@@ -351,42 +356,41 @@
                 </div>
               </div>
             </div>
-
-            <!-- <div class="secCardDetail">
-              <img src="assets/images/childBed2.png" alt="Bed" />
-              <div class="card-detail">
-                <p>Bed</p>
-                <a href="models/childBed2/childBed2 default/index.html">
-                  <button
-                    type="button"
-                    class="btn btn-outline-secondary"
-                    style="
-                      --bs-btn-padding-y: 0.35rem;
-                      --bs-btn-padding-x: 1rem;
-                      --bs-btn-font-size: 0.75rem;
-                    "
+            <div class="secCardDetail">
+              <img src="../assets/images/childBed2.png" alt="Bed" />
+              <div class="parentCard">
+                <div class="card-detail">
+                  <p>Fancy Double Bed For Toddler</p>
+                  <a href="../models/childBed2/childBed2 default/index.html">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      style="
+                        --bs-btn-padding-y: 0.35rem;
+                        --bs-btn-padding-x: 1rem;
+                        --bs-btn-font-size: 0.75rem;
+                      "
+                    >
+                      View In AR
+                    </button></a
                   >
-                    View In AR
-                  </button></a
-                >
+                </div>
+                <div class="buy_fav">
+                  <button class="buy_now">Buy Now</button>
+                  <a href="contact/index.html"
+                    ><button class="buy_now">Get Customised</button></a
+                  >
+                </div>
               </div>
-              <div class="buy_fav">
-                <button class="buy_now">Buy Now</button>
-                <a href="contact/index.html"
-                  ><button class="buy_now">Get Customised</button></a
-                >
-              </div>
-            </div> -->
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- beds end -->
+        <!-- beds end -->
 
-      <!-- Tables -->
+        <!-- Tables -->
 
-      <section class="disp" id="table">
-        <div class="base">
+        <section class="base" id="table">
           <div class="secHead">
             <p>TABLES</p>
           </div>
@@ -419,20 +423,180 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        <!-- Tables End -->
+
+        <!-- Combo -->
+
+        <section class="base" id="combo">
+          <div class="secHead">
+            <p>COMBO</p>
+          </div>
+        </section>
+
+        <!-- Combo end -->
       </section>
 
-      <!-- Tables End -->
-
-      <!-- Sofaset -->
-
-      <section class="disp" id="sofa">
+      <section id="bedTab" class="tabContent base">
         <div class="secHead">
-          <p>SOFA SETS</p>
+          <p>BEDS</p>
+        </div>
+
+        <div class="sectionRow">
+          <div class="secCardDetail">
+            <img src="../assets/images/bed2.png" alt="Bed" />
+            <div class="parentCard">
+              <div class="card-detail">
+                <p>King Size Bed</p>
+                <a href="../models/bed2/bed2 default/index.html">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    style="
+                      --bs-btn-padding-y: 0.35rem;
+                      --bs-btn-padding-x: 1rem;
+                      --bs-btn-font-size: 0.75rem;
+                    "
+                  >
+                    View In AR
+                  </button></a
+                >
+              </div>
+              <div class="buy_fav">
+                <button class="buy_now">Buy Now</button>
+                <a href="contact/index.html"
+                  ><button class="buy_now">Get Customised</button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="secCardDetail">
+            <img src="../assets/images/childBed1.png" alt="Bed" />
+            <div class="parentCard">
+              <div class="card-detail">
+                <p>Bed for Infant with Drawer</p>
+                <a href="../models/childBed1/childBed1 default/index.html">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    style="
+                      --bs-btn-padding-y: 0.35rem;
+                      --bs-btn-padding-x: 1rem;
+                      --bs-btn-font-size: 0.75rem;
+                    "
+                  >
+                    View In AR
+                  </button></a
+                >
+              </div>
+              <div class="buy_fav">
+                <button class="buy_now">Buy Now</button>
+                <a href="contact/index.html"
+                  ><button class="buy_now">Get Customised</button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="secCardDetail">
+            <img src="../assets/images/bed4.png" alt="Bed" />
+            <div class="parentCard">
+              <div class="card-detail">
+                <p>Todler's Special Bed</p>
+                <a href="../models/bed4/bed4 default/index.html">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    style="
+                      --bs-btn-padding-y: 0.35rem;
+                      --bs-btn-padding-x: 1rem;
+                      --bs-btn-font-size: 0.75rem;
+                    "
+                  >
+                    View In AR
+                  </button>
+                </a>
+              </div>
+              <div class="buy_fav">
+                <button class="buy_now">Buy Now</button>
+                <a href="contact/index.html"
+                  ><button class="buy_now">Get Customised</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="secCardDetail">
+            <img src="../assets/images/childBed2.png" alt="Bed" />
+            <div class="parentCard">
+              <div class="card-detail">
+                <p>Fancy Double Bed For Toddler</p>
+                <a href="../models/childBed2/childBed2 default/index.html">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    style="
+                      --bs-btn-padding-y: 0.35rem;
+                      --bs-btn-padding-x: 1rem;
+                      --bs-btn-font-size: 0.75rem;
+                    "
+                  >
+                    View In AR
+                  </button></a
+                >
+              </div>
+              <div class="buy_fav">
+                <button class="buy_now">Buy Now</button>
+                <a href="contact/index.html"
+                  ><button class="buy_now">Get Customised</button></a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Sofaset end -->
+      <section id="tableTab" class="tabContent base">
+        <div class="secHead">
+          <p>TABLES</p>
+        </div>
+        <div class="sectionRow">
+          <div class="secCardDetail">
+            <img src="../assets/images/table1.png" alt="table" />
+            <div class="parentCard">
+              <div class="card-detail">
+                <p>Bed</p>
+                <a href="../models/table1/table1 default/index.html">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    style="
+                      --bs-btn-padding-y: 0.35rem;
+                      --bs-btn-padding-x: 1rem;
+                      --bs-btn-font-size: 0.75rem;
+                    "
+                  >
+                    View In AR
+                  </button></a
+                >
+              </div>
+              <div class="buy_fav">
+                <button class="buy_now">Buy Now</button>
+                <a href="contact/index.html"
+                  ><button class="buy_now">Get Customised</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comboTab" class="tabContent base">
+        <div class="secHead">
+          <p>COMBO</p>
+        </div>
+      </section>
     </main>
 
     <footer>

@@ -632,19 +632,51 @@ img.cat-item {
     font-size: 3rem;
 }
 
+.categoryTab {
+    background-color: #e7d2cc9e;
+    padding: 0.5rem 0.5rem;
+}
+
+.categoryTab button {
+    margin: 0 0.5rem;
+    border: none;
+    text-align: center;
+}
+
+.tablinks {
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+}
+
+.tablinks.activeTab {
+    background-color: #069f6e;
+    color: white;
+}
+
+.tablinks:hover {
+    background-color: #069f6f5f;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+#bedTab,
+#tableTab,
+#comboTab {
+    display: none;
+}
+
 .base {
     background-color: #e6e6e671;
     backdrop-filter: blur(2px);
     margin: 2rem 3rem;
     border-radius: 1rem;
 }
-
-/* .disp {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-    padding-top: 1rem;
-} */
 
 .sectionRow {
     display: flex;
@@ -704,7 +736,8 @@ button.buy_now {
     cursor: help;
 }
 
-#otpdiv, #verifydiv{
+#otpdiv,
+#verifydiv {
     display: none;
 }
 
