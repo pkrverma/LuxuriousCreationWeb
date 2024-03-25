@@ -575,7 +575,7 @@ img.cat-item {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 55%;
+    width: 12rem;
 }
 
 .carddetail {
@@ -813,7 +813,10 @@ button.buy_now {
         color: rgb(0, 0, 0);
     }
 
-    .carddetail p,
+    .carddetail p{
+        font-size: 0.95rem;
+        width: 10rem;
+    }
     .card-detail {
         font-size: 0.95rem;
     }
@@ -852,7 +855,7 @@ button.buy_now {
         font-size: 1rem;
         margin-bottom: 0.5rem;
         white-space: nowrap;
-        width: 100px;
+        width: 8rem;
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -962,7 +965,7 @@ button.buy_now {
     .buy_fav {
         display: flex;
         flex-direction: column;
-        height: 5rem;
+        /* height: 5rem; */
         margin-bottom: 0.5rem;
     }
 
@@ -977,6 +980,13 @@ button.buy_now {
 }
 
 /* inner cattegory */
+
+.catInnerBody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 #breadcrumb {
     margin-left: 1rem;
@@ -1002,14 +1012,15 @@ button.buy_now {
 .pricing {
     position: relative;
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
-    min-width: 60px;
-    background-color: red;
+    height: 70px;
+    width: 70px;
+    min-width: 70px;
+    background-color: rgb(255, 0, 140);
+    color: white;
     text-align: center;
     place-content: center;
-    left: -3.2rem;
-    top: 7.8rem;
+    left: -3.7rem;
+    top: 7.3rem;
 }
 
 
@@ -1041,7 +1052,7 @@ button.buy_now {
     transition: all 0.2s;
 }
 
-.btnGrp button:hover{
+.btnGrp button:hover {
     background-color: #06d795;
     color: #ffffff;
 }
@@ -1065,13 +1076,20 @@ button.buy_now {
     padding: 0 0.5rem;
 }
 
-.catCard p{
+.catCard p {
     margin-bottom: 0.5rem;
 }
 
-p.furDesc{
+p.furDesc {
     margin-top: 1.5rem;
     text-align: justify;
+}
+
+p.catName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 10rem;
 }
 
 /* cart category */
