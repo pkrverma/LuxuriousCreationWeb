@@ -571,6 +571,7 @@ img.cat-item {
     transform: scale(1.05);
 }
 
+.card-detail p,
 .carddetail p {
     white-space: nowrap;
     overflow: hidden;
@@ -813,10 +814,12 @@ button.buy_now {
         color: rgb(0, 0, 0);
     }
 
-    .carddetail p{
+    .card-detail p,
+    .carddetail p {
         font-size: 0.95rem;
         width: 10rem;
     }
+
     .card-detail {
         font-size: 0.95rem;
     }
