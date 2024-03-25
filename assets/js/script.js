@@ -66,6 +66,7 @@ function sendMail() {
   const paddedString = randomString.padStart(otpLength, '0');
   otpVal = paddedString.substring(0, otpLength);
   console.log("sendMail(): " + otpVal);
+  console.log(email.value);
 
   let emailBody = `
     <h3>Luxurious Creation: Visualise Around Yourself With AR</h3>

@@ -20,6 +20,11 @@ body {
     background-attachment: fixed;
 }
 
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
 ul.navList {
     padding-left: 0rem;
 }
@@ -273,13 +278,13 @@ label #cancel {
         position: fixed;
         width: 60%;
         height: 100vh;
-        background-color: #2828288b;
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
         top: 0rem;
         left: -100%;
         transition: all .5s;
         margin-top: 0;
+        background-color: #9391918b;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
     }
 
     nav ul.navList {
@@ -423,10 +428,11 @@ img.cat-item {
 }
 
 .secHead {
-    margin: 1rem 1rem 0 2rem;
+    margin: 1rem 2rem 0 2rem;
     padding: 0 !important;
     display: flex !important;
     flex-direction: row !important;
+    justify-content: space-between;
     align-items: center !important;
 
 }
@@ -449,7 +455,7 @@ img.cat-item {
 
 @media (max-width:640px) {
     .secHead {
-        margin: 1rem 1rem 0 1rem;
+        margin: 1rem 1.5rem 0 1rem;
     }
 }
 
@@ -483,7 +489,7 @@ img.cat-item {
     }
 
     .secHead {
-        margin: 1rem 0rem 0 1rem;
+        margin: 1rem 1.5rem 0 1rem;
         padding-top: 1rem !important;
     }
 
@@ -970,6 +976,103 @@ button.buy_now {
     }
 }
 
+/* inner cattegory */
+
+#breadcrumb {
+    margin-left: 1rem;
+}
+
+.catCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffffd4;
+    width: 95%;
+    max-width: 33.77rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.imgBtn {
+    display: flex;
+    flex-direction: row;
+}
+
+.pricing {
+    position: relative;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    min-width: 60px;
+    background-color: red;
+    text-align: center;
+    place-content: center;
+    left: -3.2rem;
+    top: 7.8rem;
+}
+
+
+.imgBtn img {
+    width: 20rem;
+    max-height: 11rem;
+}
+
+.catCardinner {
+    margin: 0rem 0rem 0rem -3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btnGrp {
+    display: grid;
+    gap: 0.25rem;
+    grid-template-columns: 3fr 1fr;
+    margin-bottom: 1rem;
+}
+
+.btnGrp button {
+    border: 2px solid #06d795;
+    background-color: rgba(255, 255, 255, 0.831);
+    border-radius: 3rem;
+    padding: 0.05rem 0;
+    align-self: center;
+    transition: all 0.2s;
+}
+
+.btnGrp button:hover{
+    background-color: #06d795;
+    color: #ffffff;
+}
+
+.customise {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.addCart {
+    width: 2.5rem;
+}
+
+.addCart i {
+    padding: 0 0.5rem;
+}
+
+.buy {
+    padding: 0 0.5rem;
+}
+
+.catCard p{
+    margin-bottom: 0.5rem;
+}
+
+p.furDesc{
+    margin-top: 1.5rem;
+    text-align: justify;
+}
 
 /* cart category */
 

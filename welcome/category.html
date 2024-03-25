@@ -34,7 +34,7 @@
     <link rel="icon" href="../assets/images/Logo.jpg" />
   </head>
 
-  <body onload="classReuse()">
+  <body>
     <!-- navigation -->
     <nav id="navFile"></nav>
 
@@ -63,8 +63,17 @@
         <button class="tablinks" onclick="openTab(event, 'tableTab')">
           Table
         </button>
-        <button class="tablinks" onclick="openTab(event, 'comboTab')">
+        <button
+          class="tablinks position-relative"
+          onclick="openTab(event, 'comboTab')"
+        >
           Combo
+          <span
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info"
+          >
+            New
+            <span class="visually-hidden">unread messages</span>
+          </span>
         </button>
       </div>
 
@@ -270,6 +279,9 @@
         <section class="base" id="bed">
           <div class="secHead">
             <p>BEDS</p>
+            <a href="bed.html"
+              >See More&nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
 
           <div class="sectionRow">
@@ -393,6 +405,7 @@
         <section class="base" id="table">
           <div class="secHead">
             <p>TABLES</p>
+            <a href="table.html">See More&nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
           </div>
           <div class="sectionRow">
             <div class="secCardDetail">
@@ -432,6 +445,7 @@
         <section class="base" id="combo">
           <div class="secHead">
             <p>COMBO</p>
+            <a href="combo.html">See More&nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </section>
 
@@ -441,6 +455,7 @@
       <section id="bedTab" class="tabContent base">
         <div class="secHead">
           <p>BEDS</p>
+          <a href="bed.html">See More&nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
         <div class="sectionRow">
@@ -560,6 +575,7 @@
       <section id="tableTab" class="tabContent base">
         <div class="secHead">
           <p>TABLES</p>
+          <a href="table.html">See More&nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="sectionRow">
           <div class="secCardDetail">
@@ -595,6 +611,7 @@
       <section id="comboTab" class="tabContent base">
         <div class="secHead">
           <p>COMBO</p>
+          <a href="combo.html">See More&nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </section>
     </main>
@@ -625,6 +642,7 @@
     <script>
       $(function () {
         $("#navFile").load("../includes/navBar/navBarUser.html");
+        classReuse();
       });
 
       function classReuse() {
