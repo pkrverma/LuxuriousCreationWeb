@@ -46,7 +46,7 @@ function logoutUser() {
 
 // ======redirect to login page======
 function loginPage() {
-  window.location.replace("../authentication/index.html");
+  window.location.replace("authentication/index.html");
 }
 
 
@@ -128,4 +128,8 @@ function openTab(evt, tabName) {
   }
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " activeTab";
+}
+
+function getCustomise(){
+  window.location.href="contact/index.html";
 }
