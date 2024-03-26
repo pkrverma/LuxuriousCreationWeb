@@ -115,6 +115,7 @@ function verifyMail() {
 
 
 // ======category Tabs======
+
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabContent");

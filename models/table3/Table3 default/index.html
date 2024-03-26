@@ -1,112 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="&lt;model-viewer&gt; template" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Custom stylesheet link -->
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="../../../assets/css/style.css" />
-
-    <!-- Fontawesom cdn css link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!-- Bootstrap cdn css link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <title>Table | Luxurious Creation</title>
-    <link rel="icon" href="../../../assets/images/Logo.jpg" />
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
   </head>
   <body>
-    <!-- navigation -->
-
-    <!-- <nav>
-      <div class="navdiv">
-        <div class="navbarL">
-          <img src="../../../assets/images/Logo.jpg" alt="Logo" />
-          <h1 class="brandName">Luxurious Creation</h1>
-        </div>
-        <div class="navbarR">
-          <input type="checkbox" name="" id="check" />
-          <label for="check">
-            <i class="fa-solid fa-bars icon" id="btn"></i>
-            <i class="fa-solid fa-xmark icon" id="cancel"></i>
-          </label>
-          <ul class="navList">
-            <li><a href="../../../index.html">Home</a></li>
-            <li class="active"><a href="../../../category.html">Category</a></li>
-            <li><a href="../../../feedback/index.html">Feedback</a></li>
-            <li><a href="../../../contact.html">Contact Us</a></li>
-            <button>
-              <a
-                href="../../../authentication/index.html"
-                >Login/Register</a
-              >
-            </button>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-
-    <!-- navigation ends -->
     <!-- <model-viewer> HTML element -->
-    <model-viewer
-      src="end_table.glb"
-      ar
-      ar-modes="scene-viewer webxr quick-look"
-      camera-controls
-      tone-mapping="commerce"
-      poster="poster.webp"
-      shadow-intensity="1"
-    >
+    <model-viewer src="tableMdl.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
       <div class="progress-bar hide" slot="progress-bar">
-        <div class="update-bar"></div>
+          <div class="update-bar"></div>
       </div>
-      <button slot="ar-button" id="ar-button">View in your space</button>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
       <div id="ar-prompt">
-        <img src="ar_hand_prompt.png" />
+          <img src="ar_hand_prompt.png">
       </div>
-    </model-viewer>
-
-    <!-- Loads <model-viewer> for browsers: -->
-    <script
-      type="module"
-      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"
-    ></script>
-
-    <!-- Bootstrap js script link -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Js library script link -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    <!-- Custom js script link -->
+    </model-viewer>  
     <script src="script.js"></script>
-    <script src="../../../assets/js/script.js"></script>
-    <script>
-      $(function () {
-        $("#navFile").load("includes/navBar.html");
-      });
-    </script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
   </body>
 </html>

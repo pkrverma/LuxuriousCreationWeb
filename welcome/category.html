@@ -56,7 +56,10 @@
       </div>
 
       <div class="categoryTab">
-        <button class="tablinks" onclick="openTab(event, 'allViewTab')">
+        <button
+          class="tablinks activeTab"
+          onclick="openTab(event, 'allViewTab')"
+        >
           All Categories
         </button>
         <button class="tablinks" onclick="openTab(event, 'bedTab')">Bed</button>
@@ -76,6 +79,8 @@
           </span>
         </button>
       </div>
+
+      <!-- ----------ALL VIEW TAB---------- -->
 
       <section id="allViewTab" class="tabContent">
         <!-- =====Trending Box===== -->
@@ -104,7 +109,9 @@
                   >
                 </div>
                 <div class="buy_fav">
-                  <button class="buy_now">See Details</button>
+                  <button class="buy_now" onclick="bedPage()">
+                    See Details
+                  </button>
                   <a href="contact/index.html"
                     ><button class="buy_now">Get Customised</button></a
                   >
@@ -136,7 +143,9 @@
                   >
                 </div>
                 <div class="buy_fav">
-                  <button class="buy_now">See Details</button>
+                  <button class="buy_now" onclick="tablePage()">
+                    See Details
+                  </button>
                   <a href="contact/index.html"
                     ><button class="buy_now">Get Customised</button></a
                   >
@@ -145,15 +154,11 @@
             </div>
 
             <div class="cards">
-              <img
-                src="../assets/images/sofaset1.png"
-                alt="Sofa Set"
-                class="obj3"
-              />
+              <img src="../assets/images/table3.png" alt="Chair" class="obj3" />
               <div class="parentCard">
                 <div class="carddetail">
-                  <p>Sofa - Classic Furniture Set</p>
-                  <a href="../models/sofaset1/sofaset1 default/index.html">
+                  <p>Dinner Table Set</p>
+                  <a href="../models/table3/table3 default/index.html">
                     <button
                       type="button"
                       class="btn btn-outline-secondary"
@@ -168,7 +173,9 @@
                   </a>
                 </div>
                 <div class="buy_fav">
-                  <button class="buy_now">See Details</button>
+                  <button class="buy_now" onclick="comboPage()">
+                    See Details
+                  </button>
                   <a href="contact/index.html"
                     ><button class="buy_now">Get Customised</button></a
                   >
@@ -201,7 +208,9 @@
                   >
                 </div>
                 <div class="buy_fav">
-                  <button class="buy_now">See Details</button>
+                  <button class="buy_now" onclick="bedPage()">
+                    See Details
+                  </button>
                   <a href="contact/index.html"
                     ><button class="buy_now">Get Customised</button></a
                   >
@@ -211,14 +220,14 @@
 
             <div class="cards">
               <img
-                src="../assets/images/sofaset2.png"
-                alt="Sofa Set"
+                src="../assets/images/table4.png"
+                alt="Table"
                 class="obj5"
               />
               <div class="parentCard">
                 <div class="carddetail">
-                  <p>Sofa Set with circluar table</p>
-                  <a href="../models/sofaset2/sofaset2 default/index.html">
+                  <p>Fancy Table</p>
+                  <a href="../models/table4/table4 default/index.html">
                     <button
                       type="button"
                       class="btn btn-outline-secondary"
@@ -233,7 +242,9 @@
                   >
                 </div>
                 <div class="buy_fav">
-                  <button class="buy_now">See Details</button>
+                  <button class="buy_now" onclick="tablePage()">
+                    See Details
+                  </button>
                   <a href="contact/index.html"
                     ><button class="buy_now">Get Customised</button></a
                   >
@@ -262,7 +273,9 @@
                   >
                 </div>
                 <div class="buy_fav">
-                  <button class="buy_now">See Details</button>
+                  <button class="buy_now" onclick="tablePage()">
+                    See Details
+                  </button>
                   <a href="contact/index.html"
                     ><button class="buy_now">Get Customised</button></a
                   >
@@ -305,7 +318,9 @@
                   >
                 </div>
                 <div class="buy_fav">
-                  <button class="buy_now">See Details</button>
+                  <button class="buy_now" onclick="bedPage()">
+                    See Details
+                  </button>
                   <a href="contact/index.html"
                     ><button class="buy_now">Get Customised</button></a
                   >
@@ -333,7 +348,9 @@
                   >
                 </div>
                 <div class="buy_fav">
-                  <button class="buy_now">See Details</button>
+                  <button class="buy_now" onclick="bedPage()">
+                    See Details
+                  </button>
                   <a href="contact/index.html"
                     ><button class="buy_now">Get Customised</button></a
                   >
@@ -361,13 +378,16 @@
                   </a>
                 </div>
                 <div class="buy_fav">
-                  <button class="buy_now">See Details</button>
+                  <button class="buy_now" onclick="bedPage()">
+                    See Details
+                  </button>
                   <a href="contact/index.html"
                     ><button class="buy_now">Get Customised</button></a
                   >
                 </div>
               </div>
             </div>
+
             <div class="secCardDetail">
               <img src="../assets/images/childBed2.png" alt="Bed" />
               <div class="parentCard">
@@ -388,7 +408,9 @@
                   >
                 </div>
                 <div class="buy_fav">
-                  <button class="buy_now">See Details</button>
+                  <button class="buy_now" onclick="bedPage()">
+                    See Details
+                  </button>
                   <a href="contact/index.html"
                     ><button class="buy_now">Get Customised</button></a
                   >
@@ -430,7 +452,9 @@
                   >
                 </div>
                 <div class="buy_fav">
-                  <button class="buy_now">See Details</button>
+                  <button class="buy_now" onclick="tablePage()">
+                    See Details
+                  </button>
                   <a href="contact/index.html"
                     ><button class="buy_now">Get Customised</button></a
                   >
@@ -451,10 +475,44 @@
               >See More&nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i
             ></a>
           </div>
+
+          <div class="sectionRow">
+            <div class="secCardDetail">
+              <img src="../assets/images/combo1.png" alt="table" />
+              <div class="parentCard">
+                <div class="card-detail">
+                  <p>Fancy Chair With 2 Chair</p>
+                  <a href="../models/combo1/combo1 default/index.html">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      style="
+                        --bs-btn-padding-y: 0.35rem;
+                        --bs-btn-padding-x: 1rem;
+                        --bs-btn-font-size: 0.75rem;
+                      "
+                    >
+                      View In AR
+                    </button></a
+                  >
+                </div>
+                <div class="buy_fav">
+                  <button class="buy_now" onclick="comboPage()">
+                    See Details
+                  </button>
+                  <a href="contact/index.html"
+                    ><button class="buy_now">Get Customised</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- Combo end -->
       </section>
+
+      <!-- ----------BED TAB---------- -->
 
       <section id="bedTab" class="tabContent base">
         <div class="secHead">
@@ -485,7 +543,7 @@
                 >
               </div>
               <div class="buy_fav">
-                <button class="buy_now">See Details</button>
+                <button class="buy_now" onclick="bedPage()">See Details</button>
                 <a href="contact/index.html"
                   ><button class="buy_now">Get Customised</button></a
                 >
@@ -513,7 +571,7 @@
                 >
               </div>
               <div class="buy_fav">
-                <button class="buy_now">See Details</button>
+                <button class="buy_now" onclick="bedPage()">See Details</button>
                 <a href="contact/index.html"
                   ><button class="buy_now">Get Customised</button></a
                 >
@@ -541,7 +599,7 @@
                 </a>
               </div>
               <div class="buy_fav">
-                <button class="buy_now">See Details</button>
+                <button class="buy_now" onclick="bedPage()">See Details</button>
                 <a href="contact/index.html"
                   ><button class="buy_now">Get Customised</button></a
                 >
@@ -568,7 +626,7 @@
                 >
               </div>
               <div class="buy_fav">
-                <button class="buy_now">See Details</button>
+                <button class="buy_now" onclick="bedPage()">See Details</button>
                 <a href="contact/index.html"
                   ><button class="buy_now">Get Customised</button></a
                 >
@@ -577,6 +635,8 @@
           </div>
         </div>
       </section>
+
+      <!-- ----------TABLE TAB---------- -->
 
       <section id="tableTab" class="tabContent base">
         <div class="secHead">
@@ -606,7 +666,9 @@
                 >
               </div>
               <div class="buy_fav">
-                <button class="buy_now">See Details</button>
+                <button class="buy_now" onclick="tablePage()">
+                  See Details
+                </button>
                 <a href="contact/index.html"
                   ><button class="buy_now">Get Customised</button></a
                 >
@@ -616,12 +678,46 @@
         </div>
       </section>
 
+      <!-- ----------COMBO TAB---------- -->
+
       <section id="comboTab" class="tabContent base">
         <div class="secHead">
           <p>COMBO</p>
           <a href="combo.html"
             >See More&nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i
           ></a>
+        </div>
+
+        <div class="sectionRow">
+          <div class="secCardDetail">
+            <img src="../assets/images/combo1.png" alt="table" />
+            <div class="parentCard">
+              <div class="card-detail">
+                <p>Fancy Chair With 2 Chair</p>
+                <a href="../models/combo1/combo1 default/index.html">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    style="
+                      --bs-btn-padding-y: 0.35rem;
+                      --bs-btn-padding-x: 1rem;
+                      --bs-btn-font-size: 0.75rem;
+                    "
+                  >
+                    View In AR
+                  </button></a
+                >
+              </div>
+              <div class="buy_fav">
+                <button class="buy_now" onclick="comboPage()">
+                  See Details
+                </button>
+                <a href="contact/index.html"
+                  ><button class="buy_now">Get Customised</button></a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -658,6 +754,19 @@
       function classReuse() {
         var category = document.getElementById("categorypage");
         category.classList.add("active");
+      }
+
+      function bedPage() {
+        location.href = "bed.html";
+      }
+      function tablePage() {
+        location.href = "table.html";
+      }
+      function chairPage() {
+        location.href = "#";
+      }
+      function comboPage() {
+        location.href = "combo.html";
       }
     </script>
   </body>
