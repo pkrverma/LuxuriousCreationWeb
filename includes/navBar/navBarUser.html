@@ -30,7 +30,13 @@
         </button>
         <div id="myDropdown" class="dropdown-contentA">
           <a href="#">My Account</a>
-          <a href="#">My Cart</a>
+          <a
+            class="myCart"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+            >My Cart <span class="badge text-bg-danger">0</span></a
+          >
           <a href="#">Order History</a>
           <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
             >Logout</a
@@ -65,5 +71,68 @@
         </button>
       </div>
     </div>
+  </div>
+</div>
+
+<div
+  class="offcanvas offcanvas-end cartTab"
+  tabindex="-1"
+  id="offcanvasRight"
+  aria-labelledby="offcanvasRightLabel"
+>
+  <h1>Shopping Cart</h1>
+  <div class="listCart">
+    <div class="cartItem">
+      <div class="cartImg">
+        <img src="../assets/images/bed1.png" alt="" />
+      </div>
+      <div class="cartName">Name</div>
+      <div class="carttotalPrice">₹9599</div>
+      <div class="cartQuantity">
+        <span class="minus">-</span>
+        <span>1</span>
+        <span class="plus">+</span>
+      </div>
+    </div>
+    <div class="cartItem">
+      <div class="cartImg">
+        <img src="../assets/images/table1.png" alt="" />
+      </div>
+      <div class="cartName">Name</div>
+      <div class="carttotalPrice">₹9599</div>
+      <div class="cartQuantity">
+        <span class="minus">-</span>
+        <span>1</span>
+        <span class="plus">+</span>
+      </div>
+    </div>
+    <div class="cartItem">
+      <div class="cartImg">
+        <img src="../assets/images/table4.png" alt="" />
+      </div>
+      <div class="cartName">Name</div>
+      <div class="carttotalPrice">₹9599</div>
+      <div class="cartQuantity">
+        <span class="minus">-</span>
+        <span>1</span>
+        <span class="plus">+</span>
+      </div>
+    </div>
+    <div class="cartItem">
+      <div class="cartImg">
+        <img src="../assets/images/childBed1.png" alt="" />
+      </div>
+      <div class="cartName">Name</div>
+      <div class="carttotalPrice">₹9599</div>
+      <div class="cartQuantity">
+        <span class="minus">-</span>
+        <span>1</span>
+        <span class="plus">+</span>
+      </div>
+    </div>
+  </div>
+  <div class="cartBtn">
+    <button class="close" data-bs-dismiss="offcanvas">CLOSE</button>
+    <button class="checkOut">CHECKOUT</button>
   </div>
 </div>

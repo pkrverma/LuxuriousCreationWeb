@@ -50,14 +50,13 @@ function loginPage() {
 }
 
 
-// ======contact Anonymous======
+// !!======contact Anonymous======!!
 
 // ======verify E-Mail======
 var otpVal;
 function sendMail() {
   const email = document.querySelector('input[type="email"]');
   const otpbutton = document.querySelector('#otpbtn');
-  const verifybutton = document.querySelector('#verifybtn');
 
   // generate OTP
   const otpLength = 6;
@@ -130,6 +129,10 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " activeTab";
 }
 
-function getCustomise(){
-  window.location.href="contact/index.html";
+// ======customize button======
+function getCustomise() {
+  window.location.href = "contact/index.html";
 }
+
+// Add cart functionality
+
