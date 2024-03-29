@@ -39,101 +39,139 @@
     <!-- navigation end-->
 
     <!-- main content -->
-
     <main>
-      <div class="introModel">
-        <div class="cover">
-          <!-- <p class="tagline">Making Your Life Comfortable</p> -->
-          <h1 class="brandName coverHead">Luxurious Creation</h1>
-          <p class="tagline">Visualise around Yourself with AR</p>
-        </div>
-        <div class="brandintro">
-          <h2 class="brandName head">Luxurious Creation</h2>
-          <h4 class="brandName subhead">Make Your Living Comfortable</h4>
-          <p class="brand_desc">
-            Welcome to Luxurious Creation, where luxury meets longevity. Our
-            brand specializes in exquisite and robust furniture, seamlessly
-            combining elegance and durability. Experience the future of
-            furniture shopping with our real-time viewing technology, offering
-            you an accurate portrayal of each piece in your space. We prioritize
-            your comfort, meticulously crafting every item to provide an oasis
-            of relaxation. Dive into a world of opulence, where each creation is
-            a testament to sophistication and endurance. Elevate your living
-            spaces with Luxurious Creation- where style, sturdiness, and comfort
-            intertwine seamlessly.
-          </p>
-        </div>
-
-        <!-- =====Explore Categories===== -->
-
-        <div class="title">Explore Categories</div>
-        <div
-          class="alert alert-warning alert-dismissible fade show"
-          role="alert"
-        >
-          To visualise our product in your space, Open our website
-          <strong>Luxurious Creation</strong> on your Android Device.
+      <div class="introModel"></div>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
           <button
             type="button"
-            class="btn-close"
-            data-bs-dismiss="alert"
-            aria-label="Close"
+            data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
           ></button>
         </div>
-
-        <div class="home_category">
-          <a href="category.html#bed">
-            <div class="cat_img">
-              <div class="slideshow">
-                <img
-                  src="../assets/images/cat_bed.jpeg"
-                  class="cat-item"
-                  alt=""
-                />
-                <div class="bottom-left">Bed</div>
-              </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img
+              src="../assets/images/cat_bed.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="slideTitle">
+              <h1 class="brandName coverHead">Luxurious Creation</h1>
+              <p class="tagline">Visualise around Yourself with AR</p>
             </div>
-          </a>
-
-          <a href="category.html#table">
-            <div class="cat_img">
-              <div class="slideshow">
-                <img
-                  src="../assets/images/cat_table.jpg"
-                  class="cat-item"
-                  alt=""
-                />
-                <div class="bottom-left">Table</div>
-              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="../assets/images/cat_chair.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="slideTitle">
+              <h1 class="brandName coverHead">Luxurious Creation</h1>
+              <p class="tagline">Visualise around Yourself with AR</p>
             </div>
-          </a>
-
-          <a href="category.html#chair">
-            <div class="cat_img">
-              <div class="slideshow">
-                <img
-                  src="../assets/images/cat_chair.jpg"
-                  class="cat-item"
-                  alt=""
-                />
-                <div class="bottom-left">Chair</div>
-              </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="../assets/images/cat_table.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="slideTitle">
+              <h1 class="brandName coverHead">Luxurious Creation</h1>
+              <p class="tagline">Visualise around Yourself with AR</p>
             </div>
-          </a>
-
-          <a href="category.html#combo">
-            <div class="cat_img">
-              <div class="slideshow">
-                <img
-                  src="../assets/images/cat_combo.jpg"
-                  class="cat-item"
-                  alt=""
-                />
-                <div class="bottom-left">Combo</div>
-              </div>
-            </div>
-          </a>
+          </div>
         </div>
+      </div>
+
+      <div class="brandintro">
+        <h2 class="brandName head">Luxurious Creation</h2>
+        <h4 class="brandName subhead">Make Your Living Comfortable</h4>
+        <p class="brand_desc">
+          Welcome to Luxurious Creation, where luxury meets longevity. Our brand
+          specializes in exquisite and robust furniture, seamlessly combining
+          elegance and durability. Experience the future of furniture shopping
+          with our real-time viewing technology, offering you an accurate
+          portrayal of each piece in your space. We prioritize your comfort,
+          meticulously crafting every item to provide an oasis of relaxation.
+          Dive into a world of opulence, where each creation is a testament to
+          sophistication and endurance. Elevate your living spaces with
+          Luxurious Creation- where style, sturdiness, and comfort intertwine
+          seamlessly.
+        </p>
+      </div>
+
+      <!-- =====Explore Categories===== -->
+
+      <div class="title">Explore Categories</div>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        To visualise our product in your space, Open our website
+        <strong>Luxurious Creation</strong> on your Android Device.
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="home_category">
+        <a href="category.html#bed">
+          <div class="cat_img">
+            <div class="slideshow">
+              <img src="../assets/images/cat_bed.jpeg" class="cat-item" alt="" />
+              <div class="bottom-left">Bed</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="category.html#table">
+          <div class="cat_img">
+            <div class="slideshow">
+              <img src="../assets/images/cat_table.jpg" class="cat-item" alt="" />
+              <div class="bottom-left">Table</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="category.html#chair">
+          <div class="cat_img">
+            <div class="slideshow">
+              <img src="../assets/images/cat_chair.jpg" class="cat-item" alt="" />
+              <div class="bottom-left">Chair</div>
+            </div>
+          </div>
+        </a>
+
+        <a href="category.html#combo">
+          <div class="cat_img">
+            <div class="slideshow">
+              <img src="../assets/images/cat_combo.jpg" class="cat-item" alt="" />
+              <div class="bottom-left">Combo</div>
+            </div>
+          </div>
+        </a>
       </div>
     </main>
     <footer>
@@ -165,8 +203,8 @@
       });
 
       function classReuse() {
-        var home = document.getElementById('homepage');
-        home.classList.add('active');
+        var home = document.getElementById("homepage");
+        home.classList.add("active");
       }
     </script>
   </body>
