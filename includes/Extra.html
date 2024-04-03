@@ -1,0 +1,133 @@
+<script>
+  //==========================================
+  //==========================================
+  // Function to find an item in the cart by ID
+  function findCartItemById(itemId) {
+    for (var i = 0; i < cartItems.length; i++) {
+      if (cartItems[i].id === itemId) {
+        return cartItems[i];
+      }
+    }
+    return null;
+  }
+
+  // Function to load cart items from localStorage
+  function loadCartItems() {
+    var storedItems = localStorage.getItem("cartItems");
+    return storedItems ? JSON.parse(storedItems) : [];
+  }
+
+  // Function to save cart items to localStorage
+  function saveCartItems(cartItems) {
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  }
+
+  // Define a list to store items and their counts
+  var cartItems = loadCartItems();
+
+  function createSpace() {
+    let listCart = document.querySelector(".listCart");
+
+    const cartItemDiv = document.createElement("div");
+    cartItemDiv.classList.add("cartItem");
+
+    const cartImgDiv = document.createElement("div");
+    cartImgDiv.classList.add("cartImg");
+
+    const cartNameDiv = document.createElement("div");
+    cartNameDiv.classList.add("cartName");
+
+    const carttotalPriceDiv = document.createElement("div");
+    carttotalPriceDiv.classList.add("carttotalPrice");
+
+    const productImgTag = document.createElement("img");
+    productImgTag.classList.add("productImg");
+
+    const cartQuantityDiv = document.createElement("div");
+    cartQuantityDiv.classList.add("cartQuantity");
+
+    const minusTag = document.createElement("span");
+    minusTag.classList.add("minus");
+    minusTag.innerText += "-";
+
+    const valueTag = document.createElement("span");
+    valueTag.classList.add("value");
+
+    const plusTag = document.createElement("span");
+    plusTag.classList.add("plus");
+    plusTag.innerText += "+";
+
+    listCart.appendChild(cartItemDiv);
+    cartItemDiv.appendChild(cartImgDiv);
+    cartImgDiv.appendChild(productImgTag);
+    cartItemDiv.appendChild(cartNameDiv);
+    cartItemDiv.appendChild(carttotalPriceDiv);
+    cartItemDiv.appendChild(cartQuantityDiv);
+    cartQuantityDiv.appendChild(minusTag);
+    cartQuantityDiv.appendChild(valueTag);
+    cartQuantityDiv.appendChild(plusTag);
+  }
+
+  function addToCart(itemId) {
+    // Ensure cartItems is initialized properly
+    if (!Array.isArray(cartItems)) {
+      cartItems = [];
+    }
+
+    // Retrieve the element with the specified id
+    var item = document.getElementById(itemId);
+
+    // Ensure the item is found
+    if (item) {
+      // Find the item in the cart
+      var existingItem = findCartItemById(itemId);
+      // var count = 1;
+      if (existingItem) {
+        existingItem.count++;
+        console.log(
+          (item.querySelector(".cartQuantity .value").innerHTML =
+            cartItems[0].count)
+        );
+      } else {
+        createSpace();
+        let cartItem = document.querySelector(".cartItem");
+        let productImg = document.querySelector(".cartImg img");
+        let cartName = document.querySelector(".cartName");
+        let carttotalPrice = document.querySelector(".carttotalPrice");
+        let valueTag = document.querySelector(".cartQuantity .value");
+        cartItem.id = itemId;
+
+        // If the item is not present, add it to the cart with count 1
+        var imgSrc = item.querySelector(".imgBtn img").getAttribute("src");
+        productImg.src = imgSrc;
+
+        var catName = item.querySelector(
+          ".imgBtn .catCardinner .catDetail .catName"
+        ).textContent;
+        cartName.innerText += catName;
+
+        var pricing = item.querySelector(".imgBtn .pricing").textContent;
+        carttotalPrice.innerText += pricing;
+
+        valueTag.innerText += 1;
+        cartItems.push({
+          id: itemId,
+          imgSrc: imgSrc,
+          catName: catName,
+          count: 1,
+        });
+      }
+
+      // Save the updated cart items to localStorage
+      saveCartItems(cartItems);
+
+      // You can perform other actions with the item here, such as updating the UI
+      console.log("Cart Items:", cartItems);
+    } else {
+      alert("Item is not added to cart due to some internal error!");
+      console.log("Item with id " + itemId + " not found.");
+    }
+  }
+  //=====================================================
+  //=====================================================
+</script>

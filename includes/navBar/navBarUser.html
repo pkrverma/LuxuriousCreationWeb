@@ -35,7 +35,7 @@
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight"
-            >My Cart <span class="badge text-bg-danger">0</span></a
+            >My Cart <span class="badge text-bg-danger">1</span></a
           >
           <a href="#">Order History</a>
           <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
@@ -81,7 +81,20 @@
   aria-labelledby="offcanvasRightLabel"
 >
   <h1>Shopping Cart</h1>
-  <div class="listCart"></div>
+  <div class="listCart">
+    <div class="cartItem">
+      <div class="cartImg">
+        <img class="productImg" src="../assets/images/bed1.png" />
+      </div>
+      <div class="cartName">Modern King Bed</div>
+      <div class="carttotalPrice"></div>
+      <div class="cartQuantity">
+        <span class="minus">-</span>
+        <span class="value">1</span>
+        <span class="plus">+</span>
+      </div>
+    </div>
+  </div>
   <div class="cartBtn">
     <button class="close" data-bs-dismiss="offcanvas">CLOSE</button>
     <button class="checkOut">CHECKOUT</button>
