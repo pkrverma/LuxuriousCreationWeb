@@ -138,7 +138,7 @@ function getCustomise() {
 
 function addToCart(itemId) {
 
-  let listCart = document.querySelector('.listCart');
+  let listCart = document.querySelector('.listCart');  
 
   const cartItemDiv = document.createElement("div");
   cartItemDiv.classList.add("cartItem");
@@ -196,3 +196,7 @@ function addToCart(itemId) {
     console.log("Item with id: " + itemId + " not found.");
   }
 }
+
+//=========================================
+//-----------------------------------------
+//=========================================
