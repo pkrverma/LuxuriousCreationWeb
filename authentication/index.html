@@ -276,6 +276,13 @@
         changetag();
       });
 
+      function addClass(element, className) {
+        const arrayClasses = element.className.split(" ");
+        if (arrayClasses.indexOf(className) === -1) {
+          element.className += " " + className;
+        }
+      }
+
       // function classReuse() {
       //   var authenticate = document.getElementById("authenticatepage");
       //   authenticate.classList.add("active");

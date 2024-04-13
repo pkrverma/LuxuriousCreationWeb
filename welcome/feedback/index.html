@@ -148,7 +148,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
 
     <section id="feed">
       <h1 class="agile_head text-center">Feedback Form</h1>
-      <div class="w3layouts_main wrap">
+      <div class="w3layouts_main wrap animated-box">
         <h3>
           Please help us to serve you better by taking a couple of minutes.
         </h3>
@@ -283,6 +283,44 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
       // $(function () {
       //   $("#navFile").load("../../includes/navBar/navBarUser.html");
       // });
+
+      //====== Animation on element on viewport ======
+      document.addEventListener("DOMContentLoaded", function (event) {
+        document.addEventListener("scroll", function (event) {
+          const animatedBoxes = document.getElementsByClassName("animated-box");
+          const windowOffsetTop = window.innerHeight + window.scrollY;
+
+          Array.prototype.forEach.call(animatedBoxes, (animatedBox) => {
+            const animatedBoxOffsetTop = animatedBox.offsetTop;
+
+            if (windowOffsetTop >= animatedBoxOffsetTop) {
+              addClass(animatedBox, "fade-in");
+            }
+          });
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollTransitionleft = document.querySelector(
+          ".scroll-transition-left"
+        );
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animated-left");
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+        observer.observe(scrollTransitionleft);
+      });
+
+      function addClass(element, className) {
+        const arrayClasses = element.className.split(" ");
+        if (arrayClasses.indexOf(className) === -1) {
+          element.className += " " + className;
+        }
+      }
 
       function classReuse() {
         var feedback = document.getElementById("feedbackpage");

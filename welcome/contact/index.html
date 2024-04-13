@@ -51,7 +51,7 @@
           <h2>Get in touch</h2>
           <p>Looking for help? Fill the form and start a new adventure.</p>
 
-          <div class="getin-details">
+          <div class="getin-details animated-box">
             <h3>Headquaters</h3>
             <div>
               <ion-icon name="home-outline"></ion-icon>
@@ -63,7 +63,7 @@
             </div>
           </div>
 
-          <div class="getin-details">
+          <div class="getin-details animated-box">
             <h3>Phone</h3>
             <div>
               <ion-icon name="call-outline"></ion-icon>
@@ -75,7 +75,7 @@
             </div>
           </div>
 
-          <div class="getin-details">
+          <div class="getin-details animated-box">
             <h3>Support</h3>
             <div>
               <ion-icon name="mail-open-outline"></ion-icon>
@@ -97,7 +97,7 @@
           </div>
         </div>
 
-        <div class="form">
+        <div class="form scroll-transition-left">
           <h4>Let's Connect</h4>
           <p>Lets break the ice and give us opportunity to assist you</p>
           <form action="../../includes/databaseConn/contact.php" method="post">
@@ -181,6 +181,44 @@
       $(function () {
         $("#navFile").load("../../includes/navBar/navBarUser.html");
       });
+
+      //====== Animation on element on viewport ======
+      document.addEventListener("DOMContentLoaded", function (event) {
+        document.addEventListener("scroll", function (event) {
+          const animatedBoxes = document.getElementsByClassName("animated-box");
+          const windowOffsetTop = window.innerHeight + window.scrollY;
+
+          Array.prototype.forEach.call(animatedBoxes, (animatedBox) => {
+            const animatedBoxOffsetTop = animatedBox.offsetTop;
+
+            if (windowOffsetTop >= animatedBoxOffsetTop) {
+              addClass(animatedBox, "fade-in");
+            }
+          });
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollTransitionleft = document.querySelector(
+          ".scroll-transition-left"
+        );
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animated-left");
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+        observer.observe(scrollTransitionleft);
+      });
+
+      function addClass(element, className) {
+        const arrayClasses = element.className.split(" ");
+        if (arrayClasses.indexOf(className) === -1) {
+          element.className += " " + className;
+        }
+      }
 
       function classReuse() {
         var contact = document.getElementById("contactpage");

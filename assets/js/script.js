@@ -38,7 +38,6 @@ window.onclick = function (event) {
   }
 }
 
-
 //======logout user from logged in page======
 function logoutUser() {
   window.location.replace("../index.html");
@@ -138,7 +137,7 @@ function getCustomise() {
 
 function addToCart(itemId) {
 
-  let listCart = document.querySelector('.listCart');  
+  let listCart = document.querySelector('.listCart');
 
   const cartItemDiv = document.createElement("div");
   cartItemDiv.classList.add("cartItem");

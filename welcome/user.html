@@ -140,7 +140,11 @@
         <a href="category.html#bed">
           <div class="cat_img">
             <div class="slideshow">
-              <img src="../assets/images/cat_bed.jpeg" class="cat-item" alt="" />
+              <img
+                src="../assets/images/cat_bed.jpeg"
+                class="cat-item"
+                alt=""
+              />
               <div class="bottom-left">Bed</div>
             </div>
           </div>
@@ -149,7 +153,11 @@
         <a href="category.html#table">
           <div class="cat_img">
             <div class="slideshow">
-              <img src="../assets/images/cat_table.jpg" class="cat-item" alt="" />
+              <img
+                src="../assets/images/cat_table.jpg"
+                class="cat-item"
+                alt=""
+              />
               <div class="bottom-left">Table</div>
             </div>
           </div>
@@ -158,7 +166,11 @@
         <a href="category.html#chair">
           <div class="cat_img">
             <div class="slideshow">
-              <img src="../assets/images/cat_chair.jpg" class="cat-item" alt="" />
+              <img
+                src="../assets/images/cat_chair.jpg"
+                class="cat-item"
+                alt=""
+              />
               <div class="bottom-left">Chair</div>
             </div>
           </div>
@@ -167,7 +179,11 @@
         <a href="category.html#combo">
           <div class="cat_img">
             <div class="slideshow">
-              <img src="../assets/images/cat_combo.jpg" class="cat-item" alt="" />
+              <img
+                src="../assets/images/cat_combo.jpg"
+                class="cat-item"
+                alt=""
+              />
               <div class="bottom-left">Combo</div>
             </div>
           </div>
@@ -201,6 +217,44 @@
       $(function () {
         $("#navFile").load("../includes/navBar/navBarUser.html");
       });
+
+      //====== Animation on element on viewport ======
+      document.addEventListener("DOMContentLoaded", function (event) {
+        document.addEventListener("scroll", function (event) {
+          const animatedBoxes = document.getElementsByClassName("animated-box");
+          const windowOffsetTop = window.innerHeight + window.scrollY;
+
+          Array.prototype.forEach.call(animatedBoxes, (animatedBox) => {
+            const animatedBoxOffsetTop = animatedBox.offsetTop;
+
+            if (windowOffsetTop >= animatedBoxOffsetTop) {
+              addClass(animatedBox, "fade-in");
+            }
+          });
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollTransitionleft = document.querySelector(
+          ".scroll-transition-left"
+        );
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animated-left");
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+        observer.observe(scrollTransitionleft);
+      });
+
+      function addClass(element, className) {
+        const arrayClasses = element.className.split(" ");
+        if (arrayClasses.indexOf(className) === -1) {
+          element.className += " " + className;
+        }
+      }
 
       function classReuse() {
         var home = document.getElementById("homepage");
