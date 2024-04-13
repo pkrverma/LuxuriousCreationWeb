@@ -11,8 +11,3 @@ const onProgress = (event) => {
   }
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
-
-const backBtn = document.querySelector('.backbtn');
-backBtn.addEventListener('click', ()=>{
-  window.history.back();
-});
