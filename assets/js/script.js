@@ -190,6 +190,9 @@ function addToCart(itemId) {
     var catName = item.querySelector(".imgBtn .catCardinner .catDetail .catName").textContent;
     cartNameDiv.innerText += catName;
 
+    var priceValue = item.querySelector(".imgBtn .pricing").innerText;
+    carttotalPriceDiv.innerText += priceValue;
+
   } else {
     alert("Item is not added to cart due to some internal error!")
     console.log("Item with id: " + itemId + " not found.");
