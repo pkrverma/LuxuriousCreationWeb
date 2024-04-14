@@ -69,7 +69,6 @@ function sendMail() {
     console.log("sendMail(): " + otpVal);
 
     let emailBody = `
-    <img src = "https://drive.google.com/file/d/1H5M_K4w5J7vwGxpCllf_wksM5JqCvYAY/view?usp=drive_link" style="height:1rem; width:1rem;" alt = "LC Logo">
     <h3>Luxurious Creation: Visualise Around Yourself With AR</h3>
     <h5>Make Your Living Comfortable</h5>
     <br>
@@ -77,7 +76,7 @@ function sendMail() {
     <p>Thank You</p>`;
 
     Email.send({
-      SecureToken: "314209bb-7b82-4dd5-919d-7d9286a7d706",
+      SecureToken: "Removed Due to Security purpose",
       To: email.value,
       From: "luxuriouscreation02@gmail.com",
       Subject: "Email Verification OTP from Luxurious Creation",
