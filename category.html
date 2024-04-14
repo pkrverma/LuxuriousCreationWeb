@@ -518,24 +518,24 @@
           </div>
 
           <div class="secCardDetail animated-box">
-              <img src="../assets/images/table3.png" alt="table" />
-              <div class="parentCard">
-                <div class="card-detail">
-                  <p>Table for Drawing Room</p>
-                  <a href="../models/table3/table3 default/index.html">
-                    <button
-                      type="button"
-                      class="btn btn-outline-secondary"
-                      style="
-                        --bs-btn-padding-y: 0.35rem;
-                        --bs-btn-padding-x: 1rem;
-                        --bs-btn-font-size: 0.75rem;
-                      "
-                    >
-                      View In AR
-                    </button></a
+            <img src="../assets/images/table3.png" alt="table" />
+            <div class="parentCard">
+              <div class="card-detail">
+                <p>Table for Drawing Room</p>
+                <a href="../models/table3/table3 default/index.html">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    style="
+                      --bs-btn-padding-y: 0.35rem;
+                      --bs-btn-padding-x: 1rem;
+                      --bs-btn-font-size: 0.75rem;
+                    "
                   >
-                </div>
+                    View In AR
+                  </button></a
+                >
+              </div>
               <div class="buy_fav">
                 <button
                   class="buy_now btn-disable"
@@ -694,6 +694,7 @@
                     id="validationCustom02 otp"
                     value=""
                     name="otp"
+                    required
                   />
                 </div>
 
@@ -717,7 +718,7 @@
                     id="floatingTextarea2Disabled messagebox"
                     name="message"
                     style="height: 100px"
-                    disabled
+                    required
                   ></textarea>
                 </div>
                 <div class="col-12">
@@ -746,7 +747,12 @@
                   >
                     Close
                   </button>
-                  <button class="btn btn-primary" type="submit">
+                  <button
+                    class="btn btn-primary"
+                    id="submitButton"
+                    disabled
+                    type="submit"
+                  >
                     Submit form
                   </button>
                 </div>

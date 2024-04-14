@@ -362,6 +362,7 @@ label #cancel {
     height: 100%;
     transition: left 0.5s ease-in-out;
 }
+
 .animated-left {
     left: 0;
 }
@@ -847,11 +848,6 @@ button.buy_now {
 .buy_now.btn-disable {
     opacity: 0.75;
     cursor: help;
-}
-
-#otpdiv,
-#verifydiv {
-    display: none;
 }
 
 @media(max-width:768px) {
