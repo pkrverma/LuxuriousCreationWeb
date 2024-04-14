@@ -63,7 +63,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
     <link rel="icon" href="../../assets/images/Logo.jpg" />
   </head>
 
-  <body onload="classReuse()">
+  <body>
     <!--Navigation-->
     <nav>
       <div class="navdiv">
@@ -82,7 +82,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
           <ul class="navList" id="navList">
             <li id="homepage"><a href="../user.html">Home</a></li>
             <li id="categorypage"><a href="../category.html">Category</a></li>
-            <li id="feedbackpage">
+            <li id="feedbackpage" class="active">
               <a href="index.html">Feedback</a>
             </li>
             <li id="contactpage">
@@ -300,6 +300,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
         });
       });
 
+      function addClass(element, className) {
+        const arrayClasses = element.className.split(" ");
+        if (arrayClasses.indexOf(className) === -1) {
+          element.className += " " + className;
+        }
+      }
+
       document.addEventListener("DOMContentLoaded", function () {
         const scrollTransitionleft = document.querySelector(
           ".scroll-transition-left"
@@ -315,17 +322,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/-->
         observer.observe(scrollTransitionleft);
       });
 
-      function addClass(element, className) {
-        const arrayClasses = element.className.split(" ");
-        if (arrayClasses.indexOf(className) === -1) {
-          element.className += " " + className;
-        }
-      }
-
-      function classReuse() {
-        var feedback = document.getElementById("feedbackpage");
-        feedback.classList.add("active");
-      }
+      // function classReuse() {
+      //   var feedback = document.getElementById("feedbackpage");
+      //   feedback.classList.add("active");
+      // }
 
       // function changetag() {
       //   document.getElementById("homepage").innerHTML =

@@ -35,7 +35,7 @@
     <link rel="icon" href="../assets/images/Logo.jpg" />
   </head>
 
-  <body onload="changetag()">
+  <body onload="changetag(), classReuse()">
     <!-- navigation -->
     <nav id="navFile"></nav>
 
@@ -273,21 +273,9 @@
     <script>
       $(function () {
         $("#navFile").load("../includes/navBar/navBarAno.html");
-        changetag();
       });
 
-      function addClass(element, className) {
-        const arrayClasses = element.className.split(" ");
-        if (arrayClasses.indexOf(className) === -1) {
-          element.className += " " + className;
-        }
-      }
-
-      // function classReuse() {
-      //   var authenticate = document.getElementById("authenticatepage");
-      //   authenticate.classList.add("active");
-      // }
-
+      // ----link update for nav tab----
       function changetag() {
         document.getElementById("homepage").innerHTML =
           '<a href="../index.html">Home</a>';
@@ -295,6 +283,11 @@
           '<a href="../category.html">Category</a>';
         document.getElementById("authenticatepage").innerHTML =
           '<a href="index.html" class="active">Login/Register</a>';
+      }
+
+      function classReuse() {
+        var contact = document.getElementById("authenticatepage");
+        contact.classList.add("active");
       }
     </script>
   </body>

@@ -35,7 +35,7 @@
     <link rel="icon" href="../../assets/images/Logo.jpg" />
   </head>
 
-  <body onload="classReuse();changetag()">
+  <body onload="classReuse(), changetag()">
     <!-- navigation -->
     <nav id="navFile"></nav>
     <!-- navigation -->
@@ -178,6 +178,7 @@
       function logoutUser() {
         window.location.replace("../../index.html");
       }
+
       $(function () {
         $("#navFile").load("../../includes/navBar/navBarUser.html");
       });
@@ -198,6 +199,13 @@
         });
       });
 
+      function addClass(element, className) {
+        const arrayClasses = element.className.split(" ");
+        if (arrayClasses.indexOf(className) === -1) {
+          element.className += " " + className;
+        }
+      }
+
       document.addEventListener("DOMContentLoaded", function () {
         const scrollTransitionleft = document.querySelector(
           ".scroll-transition-left"
@@ -212,13 +220,6 @@
         });
         observer.observe(scrollTransitionleft);
       });
-
-      function addClass(element, className) {
-        const arrayClasses = element.className.split(" ");
-        if (arrayClasses.indexOf(className) === -1) {
-          element.className += " " + className;
-        }
-      }
 
       function classReuse() {
         var contact = document.getElementById("contactpage");

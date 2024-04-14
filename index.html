@@ -224,42 +224,27 @@
         });
       });
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const scrollTransitionleft = document.querySelector(
-          ".scroll-transition-left"
-        );
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("animated-left");
-              observer.unobserve(entry.target);
-            }
-          });
-        });
-        observer.observe(scrollTransitionleft);
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const scrollTransitionleft = document.querySelector(
-          ".scroll-transition-left"
-        );
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("animated-left");
-              observer.unobserve(entry.target);
-            }
-          });
-        });
-        observer.observe(scrollTransitionleft);
-      });
-
       function addClass(element, className) {
         const arrayClasses = element.className.split(" ");
         if (arrayClasses.indexOf(className) === -1) {
           element.className += " " + className;
         }
       }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollTransitionleft = document.querySelector(
+          ".scroll-transition-left"
+        );
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animated-left");
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+        observer.observe(scrollTransitionleft);
+      });
     </script>
   </body>
 </html>

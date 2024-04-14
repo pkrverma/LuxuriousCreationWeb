@@ -234,6 +234,13 @@
         });
       });
 
+      function addClass(element, className) {
+        const arrayClasses = element.className.split(" ");
+        if (arrayClasses.indexOf(className) === -1) {
+          element.className += " " + className;
+        }
+      }
+
       document.addEventListener("DOMContentLoaded", function () {
         const scrollTransitionleft = document.querySelector(
           ".scroll-transition-left"
@@ -248,13 +255,6 @@
         });
         observer.observe(scrollTransitionleft);
       });
-
-      function addClass(element, className) {
-        const arrayClasses = element.className.split(" ");
-        if (arrayClasses.indexOf(className) === -1) {
-          element.className += " " + className;
-        }
-      }
 
       function classReuse() {
         var home = document.getElementById("homepage");
