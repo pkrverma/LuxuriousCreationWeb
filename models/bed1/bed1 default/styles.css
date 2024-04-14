@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   font-family: 'Taviraj', serif;
@@ -8,7 +8,7 @@
   /* font-family: 'Ysabeau Infant', sans-serif;*/
 }
 
-:not(:defined) > * {
+:not(:defined)>* {
   display: none;
 }
 
@@ -23,7 +23,7 @@ body {
   height: 100%;
 }
 
-.navdiv{
+.navdiv {
   width: 100%;
   height: 4rem;
   background-color: #EEEDE7;
@@ -39,17 +39,17 @@ body {
   z-index: 2;
 }
 
-.navbarL{
+.navbarL {
   display: flex;
   flex-direction: row;
 }
 
-.navbarL img{
+.navbarL img {
   height: 3.5rem;
-  padding: 0.25rem ;
+  padding: 0.25rem;
 }
 
-.brandName{
+.brandName {
   margin: auto 0;
   margin-left: 0.5rem;
   font-size: 2.25rem;
@@ -57,25 +57,26 @@ body {
 
 }
 
-.navList{
+.navList {
   display: flex;
   flex-direction: row;
   list-style: none;
   align-items: center;
   text-align: center;
-  margin: 0.5rem 0 ;
+  margin: 0.5rem 0;
 }
 
-.navList li{
+.navList li {
   margin-left: 1.5rem;
 }
 
-.navList li a{
+.navList li a {
   font-size: 1rem;
   text-decoration: none;
   color: black;
 }
-.navList button{
+
+.navList button {
   margin: auto 01rem;
   padding: 0.25rem 1.5rem;
   border: 1px solid #B9B7BD;
@@ -83,24 +84,29 @@ body {
   background-color: #EEEDE7;
 }
 
-.navpad{
+.navpad {
   padding-top: 1.5rem;
 }
 
-.back{
-  padding-left: 1rem;
+.back {
+  margin: 0 0 1rem 0.2rem;
+  padding: 0.5rem 1rem;
   font-size: 1.2rem;
-  width: 6rem;
+  width: fit-content;
   cursor: pointer;
+  border-radius: 3rem;
+  transition: all ease-in-out .2s;
 }
 
-.back:hover{
-  transition: ease-in-out .2s;
-  background-color: #b9b7bd4d;
-  border-radius: 0.5rem;
+p.backbtn {
+  margin: 0;
 }
 
-.back i{
+.back:hover {
+  background-color: #8484846f;
+}
+
+.back i {
   padding-right: 0.5rem;
 }
 
@@ -155,7 +161,7 @@ model-viewer {
   padding: 0px 16px 0px 40px;
   font-family: Roboto Regular, Helvetica Neue, sans-serif;
   font-size: 14px;
-  color:#4285f4;
+  color: #4285f4;
   height: 36px;
   line-height: 36px;
   border-radius: 18px;
@@ -175,16 +181,26 @@ model-viewer {
 }
 
 @keyframes circle {
-  from { transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg); }
-  to   { transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg); }
+  from {
+    transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg);
+  }
+
+  to {
+    transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg);
+  }
 }
 
 @keyframes elongate {
-  from { transform: translateX(100px); }
-  to   { transform: translateX(-100px); }
+  from {
+    transform: translateX(100px);
+  }
+
+  to {
+    transform: translateX(-100px);
+  }
 }
 
-model-viewer > #ar-prompt {
+model-viewer>#ar-prompt {
   position: absolute;
   left: 50%;
   bottom: 60px;
@@ -192,10 +208,10 @@ model-viewer > #ar-prompt {
   display: none;
 }
 
-model-viewer[ar-status="session-started"] > #ar-prompt {
+model-viewer[ar-status="session-started"]>#ar-prompt {
   display: block;
 }
 
-model-viewer > #ar-prompt > img {
+model-viewer>#ar-prompt>img {
   animation: circle 4s linear infinite;
 }
