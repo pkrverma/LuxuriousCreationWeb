@@ -781,6 +781,7 @@ img.cat-item {
 
 #bedTab,
 #tableTab,
+#chairTab,
 #comboTab {
     display: none;
 }
