@@ -1007,16 +1007,12 @@ button.buy_now {
 
     .carddetail,
     .card-detail {
-        /* display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 0.5rem; */
         display: grid;
         grid-template-columns: 3fr 2fr;
     }
 
-    .carddetail a button,
-    .card-detail a button{
+    .parentCard .carddetail a button.btn,
+    .parentCard .card-detail a button.btn{
         width: 100%;
     }
 
@@ -1050,6 +1046,10 @@ button.buy_now {
     .card-detail p {
         width: 100%;
     }
+
+    .modal-footer{
+        flex-wrap: nowrap !important;
+    }
 }
 
 @media (max-width:330px) {
@@ -1062,7 +1062,7 @@ button.buy_now {
 
     .carddetail p,
     .card-detail p {
-        width: auto;
+        width: 80%;
     }
 
     button.buy_now {
