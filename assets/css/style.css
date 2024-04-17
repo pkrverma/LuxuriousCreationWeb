@@ -1016,6 +1016,10 @@ button.buy_now {
         width: 100%;
     }
 
+    .catCardinner a button.btn{
+        width: 100%;
+    }
+
     .parentCard {
         padding: 0;
         margin-left: 0;
