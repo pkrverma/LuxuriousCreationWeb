@@ -456,17 +456,13 @@ main {
 }
 
 .coverHead {
-    font-size: 6rem;
+    font-size: 7rem;
     margin: 0;
 }
 
 .title p {
     padding-top: 2rem;
     font-family: 'Allura', cursive;
-    /* font-family: 'Libre Baskerville', serif; */
-    /* font-family: 'Rokkitt', serif; */
-    /* font-family: 'Ysabeau Infant', sans-serif;*/
-    /* font-family: 'Pacifico', cursive; */
 }
 
 .tagline {
@@ -499,7 +495,6 @@ main {
 
 .cat_img {
     position: relative;
-    /* margin: 1.5rem 0; */
 }
 
 .slideshow {
@@ -556,6 +551,14 @@ img.cat-item {
 @media (max-width:640px) {
     .secHead {
         margin: 1rem 1.5rem 0 1rem;
+    }
+
+    .slideTitle{
+        padding-bottom: 2rem;
+    }
+
+    .slideTitle p{
+        margin-bottom: 0;
     }
 }
 
@@ -1046,17 +1049,28 @@ button.buy_now {
     .buy_fav {
         display: flex;
         flex-direction: column;
-        /* height: 5rem; */
+        padding-top: 0;
         margin-bottom: 0.5rem;
+    }
+
+    .carddetail p,
+    .card-detail p {
+        width: auto;
     }
 
     button.buy_now {
         width: 100%;
-
     }
 
     .subhead {
         width: 80%;
+    }
+
+    .carddetail,
+    .card-detail {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.5rem;
     }
 }
 
@@ -1102,6 +1116,13 @@ button.buy_now {
     place-content: center;
     left: -3.7rem;
     top: 7.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.pricing:hover {
+    background-color: rgb(255, 31, 154);
+    scale: 1.05;
+    color: #000000;
 }
 
 
@@ -1136,6 +1157,7 @@ button.buy_now {
 .btnGrp button:hover {
     background-color: #06d795;
     color: #ffffff;
+    scale: 0.95;
 }
 
 .customise {
@@ -1171,6 +1193,105 @@ p.catName {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 10rem;
+}
+
+@media(max-width:550px) {
+
+    .imgBtn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricing {
+        top: -3.65rem;
+        left: 16.5rem;
+    }
+
+    .catCardinner {
+        margin: -3.5rem 0rem 0rem 0rem;
+    }
+
+    .catCard .imgBtn .catDetail {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 2fr 1fr;
+
+    }
+
+    .catCard {
+        width: min-content;
+    }
+
+    p.furDesc {
+        margin-top: 0rem;
+    }
+
+    .btnGrp {
+        margin-top: 1rem;
+    }
+
+    button.addCart {
+        width: 100%;
+    }
+
+    p.catName {
+        width: 100%;
+    }
+}
+
+@media(max-width:390px) {
+    .imgBtn img {
+        width: 18rem;
+    }
+
+    .pricing {
+        left: 14.5rem;
+    }
+
+    .catCard .imgBtn .catDetail {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+@media(max-width:350px) {
+    .imgBtn img {
+        width: 15rem;
+    }
+
+    .pricing {
+        top: -2.65rem;
+        left: 12.5rem;
+    }
+
+    .catCard .imgBtn .catDetail {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .catCardinner {
+        margin: -2.5rem 0rem 0rem 0rem;
+    }
+
+    .pricing {
+        height: 50px;
+        width: 50px;
+        min-width: 50px;
+        font-size: 0.65rem;
+    }
+
+    p.catName {
+        width: 15rem;
+    }
+
+    .btnGrp button {
+        font-size: 0.85rem;
+    }
+
+    p.furDesc {
+        font-size: 0.85rem;
+    }
+
 }
 
 /* Add To Cart */
@@ -1306,7 +1427,7 @@ p.catName {
     }
 }
 
-@media(max-width:430px) {
+@media(max-width:350px) {
 
     .btn,
     .card-detail a>button {
