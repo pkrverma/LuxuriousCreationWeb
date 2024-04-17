@@ -1007,10 +1007,17 @@ button.buy_now {
 
     .carddetail,
     .card-detail {
-        display: flex;
+        /* display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 0.5rem;
+        padding-top: 0.5rem; */
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .carddetail a button,
+    .card-detail a button{
+        width: 100%;
     }
 
     .parentCard {
@@ -1041,7 +1048,7 @@ button.buy_now {
 
     .carddetail p,
     .card-detail p {
-        width: 55%;
+        width: 100%;
     }
 }
 
