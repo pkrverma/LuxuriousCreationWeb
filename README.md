@@ -1,1 +1,1 @@
-https://luxurious-creation.github.io/LuxuriousCreation/
+https://luxurious-creation.github.io/LuxuriousCreationWeb/
