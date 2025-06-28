@@ -7,205 +7,181 @@ import {
   IoMdAddCircle,
   IoIosCheckmarkCircle,
   IoIosArrowRoundForward,
-} from 'react-icons/io';
+} from "react-icons/io";
 
 // import images
-import Features1Img from './assets/img/features-1.png';
-import Features2Img from './assets/img/features-2.png';
-import ChairImg from './assets/img/chair.png';
-import BedImg from './assets/img/bed.png';
-import CupboardImg from './assets/img/cupboard.png';
-import LightingImg from './assets/img/lighting.png';
-import Product1Img from './assets/img/products/product-1.png';
-import Product2Img from './assets/img/products/product-2.png';
-import Product3Img from './assets/img/products/product-3.png';
-import Product4Img from './assets/img/products/product-4.png';
-import Product5Img from './assets/img/products/product-5.png';
-import Product6Img from './assets/img/products/product-6.png';
-import Product7Img from './assets/img/products/product-7.png';
-import Product8Img from './assets/img/products/product-8.png';
-import Product9Img from './assets/img/products/product-9.png';
-import Product10Img from './assets/img/products/product-10.png';
-import TestimonialImg from './assets/img/testimonial.png';
-import Avatar1Img from './assets/img/avatar-1.png';
-import Avatar2Img from './assets/img/avatar-2.png';
-import Avatar3Img from './assets/img/avatar-3.png';
-import Avatar4Img from './assets/img/avatar-4.png';
+import Features1Img from "./assets/img/features-1.png";
+import Features2Img from "./assets/img/features-2.png";
+import ChairImg from "./assets/img/chair.png";
+import BedImg from "./assets/img/bed.png";
+import CupboardImg from "./assets/img/cupboard.png";
+import LightingImg from "./assets/img/lighting.png";
+import Product1Img from "./assets/img/products/product-1.png";
+import Product2Img from "./assets/img/products/product-2.png";
+import Product3Img from "./assets/img/products/product-3.png";
+import Product4Img from "./assets/img/products/product-4.png";
+import Product5Img from "./assets/img/products/product-5.png";
+import Product6Img from "./assets/img/products/product-6.png";
+import Product7Img from "./assets/img/products/product-7.png";
+import Product8Img from "./assets/img/products/product-8.png";
+import Product9Img from "./assets/img/products/product-9.png";
+import Product10Img from "./assets/img/products/product-10.png";
+import TestimonialImg from "./assets/img/testimonial.png";
+import Avatar1Img from "./assets/img/avatar-1.png";
+import Avatar2Img from "./assets/img/avatar-2.png";
+import Avatar3Img from "./assets/img/avatar-3.png";
+import Avatar4Img from "./assets/img/avatar-4.png";
 
 export const navigation = [
   {
-    name: 'home',
-    href: 'home',
+    name: "home",
+    href: "home",
   },
   {
-    name: 'about',
-    href: 'about',
+    name: "about",
+    href: "about",
   },
   {
-    name: 'features',
-    href: 'features',
+    name: "features",
+    href: "features",
   },
   {
-    name: 'contact',
-    href: 'contact',
+    name: "contact",
+    href: "contact",
   },
 ];
 
 export const hero = {
-  title: 'Creative Home Simpify your Furniture',
+  title: "Transform Your Home with Creative Comfort",
   subtitle:
-    'Do i have consent to record this meeting gain locaion, root-and-branch, review, nor game plan who’s the goto',
-  buttonText: 'Shop Now',
+    "Discover furniture that blends style, innovation, and smart AR previews — experience luxury like never before.",
+  buttonText: "Explore Collection",
 };
 
 export const stats = [
-  {
-    value: '7',
-    text: 'Year Experience',
-  },
-  {
-    value: '2',
-    text: 'Opened in the country',
-  },
-  {
-    value: '10k+',
-    text: 'Furniture sold',
-  },
-  {
-    value: '260+',
-    text: 'Variant Furniture',
-  },
+  { value: "7", text: "Years of Expertise" },
+  { value: "2", text: "Stores Nationwide" },
+  { value: "10k+", text: "Delighted Customers" },
+  { value: "260+", text: "Furniture Variants" },
 ];
 
 export const features = {
   image: <Features1Img />,
-  title: 'We Create your home more aesthetic',
+  title: "Designing Aesthetic Living Spaces",
   subtitle:
-    'Furniture power is a software as services for multipurpose business management system',
-  buttonText: 'Show Now',
+    "Furniture Power is your all-in-one solution for modern interior transformation and seamless space management.",
+  buttonText: "Explore Now",
   items: [
     {
       icon: <IoIosCheckmarkCircle />,
-      title: 'Valuation Services',
+      title: "Smart Valuation Tools",
       subtitle:
-        'Sometimes features require a short description.  This can be detailed description',
+        "Get instant furniture estimates with intelligent design insights for your space.",
     },
     {
       icon: <IoIosCheckmarkCircle />,
-      title: 'Development of Furniture Models',
+      title: "Crafting Custom Furniture Models",
       subtitle:
-        'Sometimes features require a short description.  This can be detailed description',
+        "Tailored furniture prototypes designed digitally to fit your vision and space.",
     },
   ],
   feature2: {
     image: <Features2Img />,
-    title: 'The Best Furniture Manufacturer of your choice',
+    title: "Your Trusted Luxury Furniture Partner",
     subtitle:
-      'Furnitre power is a software as services for multiperpose business management system, expecially for them who are running two or more business exploree the future Furnitre power is a software as services.',
+      "Furniture Power blends cutting-edge design and technology, perfect for businesses managing multiple home & office spaces. Discover the future of smart furnishing with us.",
   },
 };
 
 export const newInStore = {
-  title: 'New In Store Now',
-  subtitle: 'Get the latest items immediately with promo prices',
-  link: 'Check all',
+  title: "Just Arrived!",
+  subtitle: "Browse the newest arrivals at special launch prices",
+  link: "View Collection",
   icon: <IoIosArrowRoundForward />,
   products: [
-    {
-      name: 'chair',
-      image: <ChairImg />,
-    },
-    {
-      name: 'bed',
-      image: <BedImg />,
-    },
-    {
-      name: 'cupboard',
-      image: <CupboardImg />,
-    },
-    {
-      name: 'lighting',
-      image: <LightingImg />,
-    },
+    { name: "chair", image: <ChairImg /> },
+    { name: "bed", image: <BedImg /> },
+    { name: "cupboard", image: <CupboardImg /> },
+    { name: "lighting", image: <LightingImg /> },
   ],
 };
 
 export const products = {
-  title: 'All Products',
+  title: "All Products",
   subtitle:
-    'The products we provide only for you as our service are selected from the best products with number 1 quality in the world',
+    "The products we provide only for you as our service are selected from the best products with number 1 quality in the world",
   pages: [
     {
       productList: [
         {
           image: <Product1Img />,
           icon: <IoMdAddCircle />,
-          name: 'Ceiling Light',
-          price: 75,
-          oldPrice: 82,
+          name: "Ceiling Light",
+          price: 3499,
+          oldPrice: 4199,
         },
         {
           image: <Product2Img />,
           icon: <IoMdAddCircle />,
-          name: 'Wood Chair',
-          price: 50,
-          oldPrice: 70,
+          name: "Modern Oak Chair",
+          price: 4299,
+          oldPrice: 4999,
         },
         {
           image: <Product3Img />,
           icon: <IoMdAddCircle />,
-          name: 'Papper Cupboard',
-          price: 105,
-          oldPrice: 120,
+          name: "Eco Paperboard Cupboard",
+          price: 8999,
+          oldPrice: 9999,
         },
         {
           image: <Product4Img />,
           icon: <IoMdAddCircle />,
-          name: 'Ole Gundorse Spring',
-          price: 75,
-          oldPrice: 82,
+          name: "Ole Gundorse Mattress",
+          price: 7599,
+          oldPrice: 8499,
         },
         {
           image: <Product5Img />,
           icon: <IoMdAddCircle />,
-          name: 'Treos Seroes 911',
-          price: 200,
-          oldPrice: 210,
+          name: "Treos Elite Sofa 911",
+          price: 18999,
+          oldPrice: 20999,
         },
         {
           image: <Product6Img />,
           icon: <IoMdAddCircle />,
-          name: 'Multi bilderman slibber',
-          price: 45,
-          oldPrice: 50,
+          name: "Slender Modular Sofa",
+          price: 5499,
+          oldPrice: 5999,
         },
         {
           image: <Product7Img />,
           icon: <IoMdAddCircle />,
-          name: 'XORA corner desk',
-          price: 320,
-          oldPrice: 325,
+          name: "XORA Executive Corner Desk",
+          price: 15999,
+          oldPrice: 16999,
         },
         {
           image: <Product8Img />,
           icon: <IoMdAddCircle />,
-          name: 'Black Forest Series Wood',
-          price: 225,
-          oldPrice: 240,
+          name: "Black Forest Walnut Shelf",
+          price: 12499,
+          oldPrice: 13499,
         },
         {
           image: <Product9Img />,
           icon: <IoMdAddCircle />,
-          name: 'Papper Cupboard',
-          price: 105,
-          oldPrice: 120,
+          name: "Eco Paperboard Cupboard",
+          price: 8999,
+          oldPrice: 9999,
         },
         {
           image: <Product10Img />,
           icon: <IoMdAddCircle />,
-          name: 'Ole Gundorse Spring',
-          price: 75,
-          oldPrice: 82,
+          name: "Ole Gundorse Mattress",
+          price: 7599,
+          oldPrice: 8499,
         },
       ],
     },
@@ -214,72 +190,72 @@ export const products = {
         {
           image: <Product1Img />,
           icon: <IoMdAddCircle />,
-          name: 'Ceiling Light',
-          price: 75,
-          oldPrice: 82,
+          name: "Ceiling Light",
+          price: 3499,
+          oldPrice: 4199,
         },
         {
           image: <Product2Img />,
           icon: <IoMdAddCircle />,
-          name: 'Wood Chair',
-          price: 50,
-          oldPrice: 70,
+          name: "Modern Oak Chair",
+          price: 4299,
+          oldPrice: 4999,
         },
         {
           image: <Product3Img />,
           icon: <IoMdAddCircle />,
-          name: 'Papper Cupboard',
-          price: 105,
-          oldPrice: 120,
+          name: "Eco Paperboard Cupboard",
+          price: 8999,
+          oldPrice: 9999,
         },
         {
           image: <Product4Img />,
           icon: <IoMdAddCircle />,
-          name: 'Ole Gundorse Spring',
-          price: 75,
-          oldPrice: 82,
+          name: "Ole Gundorse Mattress",
+          price: 7599,
+          oldPrice: 8499,
         },
         {
           image: <Product5Img />,
           icon: <IoMdAddCircle />,
-          name: 'Treos Seroes 911',
-          price: 200,
-          oldPrice: 210,
+          name: "Treos Elite Sofa 911",
+          price: 18999,
+          oldPrice: 20999,
         },
         {
           image: <Product6Img />,
           icon: <IoMdAddCircle />,
-          name: 'Multi bilderman slibber',
-          price: 45,
-          oldPrice: 50,
+          name: "Slender Modular Sofa",
+          price: 5499,
+          oldPrice: 5999,
         },
         {
           image: <Product7Img />,
           icon: <IoMdAddCircle />,
-          name: 'XORA corner desk',
-          price: 320,
-          oldPrice: 325,
+          name: "XORA Executive Corner Desk",
+          price: 15999,
+          oldPrice: 16999,
         },
         {
           image: <Product8Img />,
           icon: <IoMdAddCircle />,
-          name: 'Black Forest Series Wood',
-          price: 225,
-          oldPrice: 240,
+          name: "Black Forest Walnut Shelf",
+          price: 12499,
+          oldPrice: 13499,
         },
         {
           image: <Product9Img />,
           icon: <IoMdAddCircle />,
-          name: 'Papper Cupboard',
-          price: 105,
-          oldPrice: 120,
+          name: "Eco Paperboard Cupboard",
+          price: 8999,
+          oldPrice: 9999,
         },
         {
           image: <Product10Img />,
           icon: <IoMdAddCircle />,
-          name: 'Ole Gundorse Spring',
-          price: 75,
-          oldPrice: 82,
+          name: "Ole Gundorse Mattress",
+          price: 7599,
+          oldPrice: 8499,
         },
       ],
     },
@@ -287,58 +263,58 @@ export const products = {
 };
 
 export const testimonial = {
-  title: 'What people are saying about us',
+  title: "What people are saying about us",
   image: <TestimonialImg />,
   persons: [
     {
       avatar: <Avatar1Img />,
-      name: 'Josh Smith',
-      occupation: 'Manager of The New York Times',
+      name: "Aarav Mehta",
+      occupation: "Architect, Mumbai",
       message:
-        '“They are have a perfect touch for make something so professional ,interest and useful for a lot of people .”',
+        "“The AR feature let me place the sofa virtually in my living room—it fit perfectly. Super impressed!”",
     },
     {
       avatar: <Avatar2Img />,
-      name: 'Brandi Johns',
-      occupation: 'Manager of The New York Times',
+      name: "Sneha Kapoor",
+      occupation: "Interior Designer, Bangalore",
       message:
-        '“They are have a perfect touch for make something so professional ,interest and useful for a lot of people .”',
+        "“I loved the range of modern furniture. Great quality and fast delivery too!”",
     },
     {
       avatar: <Avatar3Img />,
-      name: 'Paula Pfeffer',
-      occupation: 'Manager of The New York Times',
+      name: "Rohan Verma",
+      occupation: "Software Engineer, Pune",
       message:
-        '“They are have a perfect touch for make something so professional ,interest and useful for a lot of people .”',
+        "“Ordering was smooth and the AR try-on saved me from making a wrong purchase. Highly recommend.”",
     },
   ],
 };
 
 export const newsletter = {
-  title: 'Get more discount Off your order',
-  subtitle: 'Join our mailing list',
-  placeholder: 'Your email address',
-  buttonText: 'Shop Now',
+  title: "Unlock Exclusive Deals & Discounts",
+  subtitle: "Subscribe and stay updated on premium launches",
+  placeholder: "Enter your email",
+  buttonText: "Join & Save",
 };
 
 export const footer = {
   social: [
     {
       icon: <IoLogoYoutube />,
-      href: '#',
+      href: "#",
     },
     {
       icon: <IoLogoInstagram />,
-      href: '#',
+      href: "#",
     },
     {
       icon: <IoLogoGithub />,
-      href: '#',
+      href: "#",
     },
     {
       icon: <IoLogoFacebook />,
-      href: '#',
+      href: "#",
     },
   ],
-  copyright: 'FurniShop 2022 - All Rights Reserved.',
+  copyright: "Luxurious Creation © 2025 - All Rights Reserved.",
 };
