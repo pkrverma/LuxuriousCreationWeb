@@ -17,10 +17,12 @@ const Features = () => {
               {items.map((items, index) => {
                 const { title, subtitle, icon } = items;
                 return (
-                  <div className="flex mb-6 lg:last:mb-0">
+                  <div className="flex mb-6 lg:last:mb-0" key={index}>
                     <div className="text-2xl mr-4 lg:text-3xl">{icon}</div>
-                    <div className="text-base lg:text-xl font-semibold mb-3">
-                      <h4>{title}</h4>
+                    <div>
+                      <h4 className="text-base lg:text-xl font-semibold mb-3">
+                        {title}
+                      </h4>
                       <p>{subtitle}</p>
                     </div>
                   </div>
