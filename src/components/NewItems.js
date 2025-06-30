@@ -7,7 +7,7 @@ const NewItems = () => {
   return (
     <section className="section">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row lg:justify-between">
           <div className="flex md:flex-col items-baseline gap-x-6 mb-6 lg:mb-0">
             <h2 className="title max-w-[245px] lg:mt-[30px] lg:mb-[90px]">
               {title}
@@ -23,7 +23,7 @@ const NewItems = () => {
               <div className="text-3xl">{icon}</div>
             </div>
           </div>
-        <div className="lg:max-w-[800px] xl:max-w-[950px] lg:absolute lg:right-0">
+          <div className="lg:max-w-[800px] xl:max-w-[950px] lg:right">
             <NewItemsSlider />
           </div>
         </div>
