@@ -6,6 +6,7 @@ import FeaturesSecond from "./components/FeaturesSecond";
 import Products from "./components/Products";
 import Testimonial from "./components/Testimonial";
 import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
 
 // import components
 
@@ -19,6 +20,7 @@ const App = () => {
       <Products />
       <Testimonial />
       <Newsletter />
+      <Footer />
     </div>
   );
 };
