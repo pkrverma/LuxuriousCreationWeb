@@ -5,6 +5,7 @@ import NewItems from "./components/NewItems";
 import FeaturesSecond from "./components/FeaturesSecond";
 import Products from "./components/Products";
 import Testimonial from "./components/Testimonial";
+import Newsletter from "./components/Newsletter";
 
 // import components
 
@@ -17,6 +18,7 @@ const App = () => {
       <FeaturesSecond />
       <Products />
       <Testimonial />
+      <Newsletter />
     </div>
   );
 };
