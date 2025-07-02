@@ -9,11 +9,11 @@ const NewItems = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:justify-between">
           <div className="flex md:flex-col items-baseline gap-x-6 mb-6 lg:mb-0">
-            <h2 className="title max-w-[245px] lg:mt-[30px] lg:mb-[90px]">
+            <h2 className="title max-w-[245px] lg:mt-[30px] lg:mb-[90px] ">
               {title}
             </h2>
             <p className="max-w-[245px] lg:mb-12">{subtitle}</p>
-            <div className="hidden lg:flex items-center">
+            <div className="hidden lg:flex items-center text-accent">
               <a
                 className="hover:border-b border-primary lg:items-center font-medium transition-all"
                 href="#"
@@ -23,7 +23,7 @@ const NewItems = () => {
               <div className="text-3xl">{icon}</div>
             </div>
           </div>
-          <div className="lg:max-w-[800px] xl:max-w-[950px] lg:right">
+          <div className="lg:max-w-[700px] xl:max-w-[850px]">
             <NewItemsSlider />
           </div>
         </div>

@@ -21,7 +21,7 @@ const NewItemsSlider = () => {
     >
       {newInStore.products.map((product, index) => {
         return (
-          <SwiperSlide className="max-w-[265px]" key={index}>
+          <SwiperSlide className="max-w-[240px]" key={index}>
             <div className="relative">
               <img src={product.image.type} alt="" />
               <div className="absolute text-white bottom-[20px] w-full text-center text-[18px] lg:text-2xl font-medium capitalize">
